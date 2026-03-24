@@ -152,6 +152,12 @@ static int open_canfd_socket(const char* iface)
         return -1;
     }
 
+    // 设置接收超时：200ms，让 recv_thread 能定期检查 g_running
+    struct timeval tv{};
+    tv.tv_sec  = 0;
+    tv.tv_usec = 200000;
+    setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
+
     printf("[SocketCAN] %s opened (fd=%d, classic CAN mode)\n", iface, sock);
     return sock;
 }
@@ -230,7 +236,8 @@ static void recv_thread_fn(int sock)
     while (g_running.load()) {
         ssize_t nbytes = read(sock, &frame, sizeof(struct can_frame));
         if (nbytes < 0) {
-            if (errno == EINTR) break;
+            if (errno == EINTR || errno == EAGAIN || errno == EWOULDBLOCK)
+                continue;  // 超时或信号中断，检查 g_running 后继续
             perror("[ERROR] read() CAN frame");
             break;
         }
