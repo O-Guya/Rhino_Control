@@ -1,0 +1,4 @@
+/home/franka/Documents/motor-controller/build/CMakeFiles/dm_main.dir
+/home/franka/Documents/motor-controller/build/CMakeFiles/dev_sn.dir
+/home/franka/Documents/motor-controller/build/CMakeFiles/edit_cache.dir
+/home/franka/Documents/motor-controller/build/CMakeFiles/rebuild_cache.dir

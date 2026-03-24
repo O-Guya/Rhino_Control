@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/franka/Documents/motor-controller/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
