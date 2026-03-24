@@ -135,15 +135,6 @@ static int open_canfd_socket(const char* iface)
         return -1;
     }
 
-    // 启用 CAN-FD 帧接收/发送
-    int enable_canfd = 1;
-    if (setsockopt(sock, SOL_CAN_RAW, CAN_RAW_FD_FRAMES,
-                   &enable_canfd, sizeof(enable_canfd)) < 0) {
-        perror("[ERROR] setsockopt(CAN_RAW_FD_FRAMES)");
-        close(sock);
-        return -1;
-    }
-
     struct ifreq ifr;
     strncpy(ifr.ifr_name, iface, IFNAMSIZ - 1);
     if (ioctl(sock, SIOCGIFINDEX, &ifr) < 0) {
@@ -161,22 +152,25 @@ static int open_canfd_socket(const char* iface)
         return -1;
     }
 
-    printf("[SocketCAN] %s opened (fd=%d)\n", iface, sock);
+    printf("[SocketCAN] %s opened (fd=%d, classic CAN mode)\n", iface, sock);
     return sock;
 }
 
-// 发送一帧 CAN-FD（标准 11-bit ID，BRS 开启）
+// 发送一帧经典 CAN（标准 11-bit ID，8 字节数据）
 static bool send_canfd_frame(int sock, uint32_t can_id,
                              const uint8_t* data, uint8_t len)
 {
-    struct canfd_frame frame{};
-    frame.can_id = can_id;   // 11-bit 标准帧，不加 CAN_EFF_FLAG
-    frame.len    = len;
-    frame.flags  = CANFD_BRS;
-    memcpy(frame.data, data, len);
+    struct can_frame frame{};
+    frame.can_id  = can_id & CAN_SFF_MASK;  // 11-bit 标准帧
+    frame.can_dlc = len > 8 ? 8 : len;
+    memcpy(frame.data, data, frame.can_dlc);
 
-    ssize_t written = write(sock, &frame, sizeof(struct canfd_frame));
-    if (written != sizeof(struct canfd_frame)) {
+    ssize_t written = write(sock, &frame, sizeof(struct can_frame));
+    if (written != sizeof(struct can_frame)) {
+        if (errno == ENOBUFS) {
+            // TX 队列已满，跳过本帧，不打印错误（下个周期重试）
+            return false;
+        }
         perror("[ERROR] write() CAN frame");
         return false;
     }
@@ -232,18 +226,18 @@ static std::atomic<bool> g_running{true};
 
 static void recv_thread_fn(int sock)
 {
-    struct canfd_frame frame{};
+    struct can_frame frame{};
     while (g_running.load()) {
-        ssize_t nbytes = read(sock, &frame, sizeof(struct canfd_frame));
+        ssize_t nbytes = read(sock, &frame, sizeof(struct can_frame));
         if (nbytes < 0) {
             if (errno == EINTR) break;
             perror("[ERROR] read() CAN frame");
             break;
         }
 
-        uint32_t rx_id = frame.can_id & CAN_EFF_MASK;  // 去掉标志位
+        uint32_t rx_id = frame.can_id & CAN_SFF_MASK;  // 去掉标志位
 
-        if (rx_id == MOTOR_MST_ID && nbytes >= (ssize_t)sizeof(struct canfd_frame)) {
+        if (rx_id == MOTOR_MST_ID && frame.can_dlc >= 6) {
             float pos, vel, tau;
             decode_feedback(frame.data, &pos, &vel, &tau);
             printf("[RX] ID=0x%02X | pos=%7.3f rad | vel=%7.3f rad/s | tau=%7.3f Nm\n",
@@ -272,8 +266,7 @@ int main()
     g_sock = open_canfd_socket(CAN_IFACE);
     if (g_sock < 0) {
         fprintf(stderr, "[ERROR] 无法打开 %s，请确认接口已 UP：\n"
-                        "  sudo ip link set %s up type can "
-                        "bitrate 1000000 dbitrate 5000000 fd on\n",
+                        "  sudo ip link set %s up type can bitrate 1000000\n",
                 CAN_IFACE, CAN_IFACE);
         return 1;
     }
@@ -291,13 +284,13 @@ int main()
     // 4. 启动接收线程
     std::thread recv_thread(recv_thread_fn, g_sock);
 
-    // 5. 控制循环 1kHz
+    // 5. 控制循环 200Hz
     //    初始参数：kp=0, kd=0.5（轻阻尼，安全起步），q/dq/tau=0
-    printf("[INFO] 控制循环启动，按 Ctrl+C 退出\n");
+    printf("[INFO] 控制循环启动 (200 Hz)，按 Ctrl+C 退出\n");
 
     using clock    = std::chrono::steady_clock;
     using duration = std::chrono::duration<double>;
-    const duration cycle(0.001);  // 1ms = 1kHz
+    const duration cycle(0.005);  // 5ms = 200Hz
 
     while (g_running.load()) {
         auto t0 = clock::now();
