@@ -1,0 +1,15 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 200  # [Hz] must match hardware read/write rate
+
+    gripper_controller:
+      type: gripper_controllers/GripperActionController
+
+# Hardware interface parameters (read by DmGripperSystem::on_init)
+# These mirror the URDF <hardware> block and can override it at runtime.
+dm_gripper_system:
+  ros__parameters:
+    can_interface: "can0"
+    motor_can_id: "0x01"
+    motor_mst_id: "0x00"
+    use_canfd: "true"

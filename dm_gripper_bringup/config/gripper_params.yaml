@@ -1,0 +1,27 @@
+gripper_action_server:
+  ros__parameters:
+    # ── CAN interface ──────────────────────────────────────────────────────────
+    can_interface: "can0"
+    motor_can_id: 1       # 0x01 — motor command CAN ID
+    motor_mst_id: 0       # 0x00 — motor feedback CAN ID (mst_id)
+    use_canfd: true
+
+    # ── Control rate ───────────────────────────────────────────────────────────
+    control_rate_hz: 200.0
+
+    # ── Kinematics ─────────────────────────────────────────────────────────────
+    # screw_lead_m = lead_mm_per_rev / (1000 * 2π)
+    # Placeholder: 5 mm/rev → 7.957747e-4 m/rad
+    # TODO: update after linkage calibration
+    screw_lead_m: 7.957747e-4
+    max_width_m: 0.10     # maximum jaw opening [m]
+
+    # ── Controller (impedance mode) ────────────────────────────────────────────
+    kp: 20.0              # [Nm/rad]    virtual spring stiffness
+    kd: 0.5               # [Nm·s/rad]  virtual damper
+    tau_max: 5.0          # [Nm]        output torque saturation
+
+    # ── Contact detection ──────────────────────────────────────────────────────
+    contact_tau_threshold: 2.0         # [Nm]  torque window mean threshold
+    contact_pos_stuck_threshold: 0.001 # [rad] max Δpos considered "stuck"
+    contact_window_size: 20            # number of samples in sliding window

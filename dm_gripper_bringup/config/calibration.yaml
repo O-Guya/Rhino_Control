@@ -1,0 +1,30 @@
+# Gripper calibration parameters
+# Status: PLACEHOLDER — fill in after linkage hardware arrives and calibration
+#         procedure is run.
+#
+# Calibration procedure (TODO):
+#   1. Mount linkage on screw nut.
+#   2. Command motor to fully open position (q = q_open_rad).
+#   3. Record q_open_rad and measure jaw width with calipers.
+#   4. Command motor to zero position, record jaw width.
+#   5. Fit polynomial w(x) from (x, w) pairs.
+
+calibration:
+  # Motor position at fully open jaw
+  q_open_rad: 0.0          # TODO: measure
+
+  # Motor position at zero width (fingers touching)
+  q_close_rad: 0.0         # TODO: measure
+
+  # Screw lead (may be refined by calibration)
+  screw_lead_m: 7.957747e-4  # TODO: refine
+
+  # Linkage polynomial coefficients: w = c0 + c1*x + c2*x^2
+  # (placeholder — identity mapping)
+  linkage_poly_c0: 0.0
+  linkage_poly_c1: -1.0
+  linkage_poly_c2: 0.0
+
+  # Torque-to-force gain (measured, not calculated)
+  # F = k_tau_to_force * tau
+  k_tau_to_force: 0.0      # TODO: measure with force gauge

@@ -1,0 +1,10 @@
+<library path="dm_gripper_hardware">
+  <class name="dm_gripper_hardware/DmGripperSystem"
+         type="dm_gripper_hardware::DmGripperSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      ros2_control SystemInterface for the DM4310 screw-drive gripper
+      communicating over Linux SocketCAN.
+    </description>
+  </class>
+</library>
