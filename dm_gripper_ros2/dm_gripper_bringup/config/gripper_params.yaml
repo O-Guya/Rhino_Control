@@ -1,0 +1,24 @@
+dm_gripper:
+  ros__parameters:
+    # SocketCAN 接口
+    can_interface: "can0"
+    motor_can_id: 1
+
+    # DM4310 物理极限（经典 CAN 模式）
+    q_max: 12.5      # rad
+    dq_max: 30.0     # rad/s
+    tau_max: 10.0    # N·m
+
+    # 传动参数（连杆到货后标定）
+    lead_mm: 0.0        # 丝杆导程 [mm/rev]
+    linkage_ratio: 0.0  # 连杆线位移→开口宽度映射 [mm/mm]
+
+    # 阻抗控制默认参数（模式 A）
+    kp: 10.0   # 位置刚度
+    kd: 1.0    # 阻尼
+    tau_ff: 0.0
+
+    # 接触检测阈值
+    tau_contact_threshold: 0.5      # N·m
+    position_stuck_threshold_rad: 0.005  # rad
+    stuck_window_ms: 100

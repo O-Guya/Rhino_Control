@@ -1,0 +1,10 @@
+# 标定结果 — 连杆到货并完成标定后填写
+# 运行标定程序后自动写入此文件
+dm_gripper_calibration:
+  ros__parameters:
+    zero_position_rad: 0.0    # 电机零点（完全闭合时的角度）
+    max_open_width_mm: 0.0    # 最大开口宽度 [mm]
+    # 连杆几何参数（Denavit-Hartenberg / 几何拟合）
+    linkage_a_mm: 0.0
+    linkage_b_mm: 0.0
+    linkage_c_mm: 0.0

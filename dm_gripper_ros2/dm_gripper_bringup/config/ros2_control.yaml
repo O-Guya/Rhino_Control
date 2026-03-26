@@ -1,0 +1,15 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 200  # Hz
+
+    gripper_controller:
+      type: gripper_controllers/GripperActionController
+
+gripper_controller:
+  ros__parameters:
+    action_monitor_rate: 20.0         # Hz
+    goal_tolerance: 0.01              # m (开口宽度容差)
+    max_effort: 5.0                   # N
+    stall_velocity_threshold: 0.001   # m/s
+    stall_timeout: 1.0                # s
+    joint: gripper_joint
