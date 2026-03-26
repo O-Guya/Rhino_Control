@@ -45,8 +45,8 @@ static const uint32_t MOTOR_MST_ID = 0x00;   // 电机反馈 CAN ID (mst_id)
 
 // DM4310 限位参数（来源：damiao.cpp:9）
 static const float Q_MAX   = 12.5f;   // rad
-static const float DQ_MAX  = 45.0f;   // rad/s
-static const float TAU_MAX = 18.0f;   // Nm
+static const float DQ_MAX  = 30.0f;   // rad/s
+static const float TAU_MAX = 10.0f;   // Nm
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 量化辅助函数（来源：damiao.cpp:305-311, main.cpp:21-27）
@@ -111,8 +111,7 @@ static void pack_mit_frame(float kp, float kd,
 //   payload[4-5]  : torque 低12bit 跨两字节
 // ─────────────────────────────────────────────────────────────────────────────
 static void decode_feedback(const uint8_t* payload,
-                            float* pos, float* vel, float* tau,
-                            float* t_mos = nullptr, float* t_rotor = nullptr)
+                            float* pos, float* vel, float* tau)
 {
     uint16_t q_uint   = (static_cast<uint16_t>(payload[1]) << 8) | payload[2];
     uint16_t dq_uint  = (static_cast<uint16_t>(payload[3]) << 4) | (payload[4] >> 4);
@@ -121,8 +120,6 @@ static void decode_feedback(const uint8_t* payload,
     *pos = uint_to_float(q_uint,   -Q_MAX,   Q_MAX,   16);
     *vel = uint_to_float(dq_uint,  -DQ_MAX,  DQ_MAX,  12);
     *tau = uint_to_float(tau_uint, -TAU_MAX, TAU_MAX, 12);
-    if (t_mos)   *t_mos   = static_cast<float>(payload[6]);
-    if (t_rotor) *t_rotor = static_cast<float>(payload[7]);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -154,13 +151,6 @@ static int open_canfd_socket(const char* iface)
         close(sock);
         return -1;
     }
-    int enable_fd = 1;
-    if (setsockopt(sock, SOL_CAN_RAW, CAN_RAW_FD_FRAMES,
-                   &enable_fd, sizeof(enable_fd)) < 0) {
-        perror("[ERROR] setsockopt(CAN_RAW_FD_FRAMES)");
-        close(sock);
-        return -1;
-    }
     // 设置接收超时，让 recv_thread 能够定期检查 g_running
     struct timeval tv{};
     tv.tv_sec  = 0;
@@ -168,24 +158,26 @@ static int open_canfd_socket(const char* iface)
     if (setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv)) < 0) {
         perror("[WARN] setsockopt(SO_RCVTIMEO)");  // 非致命，继续
     }
-    printf("[SocketCAN] %s opened (fd=%d, CAN FD + BRS mode)\n", iface, sock);
+    printf("[SocketCAN] %s opened (fd=%d, classic CAN mode)\n", iface, sock);
     return sock;
 }
 
-// ── 完整替换 ────────────────────────────────────────────────
+// 发送一帧经典 CAN（标准 11-bit ID，8 字节数据）
 static bool send_canfd_frame(int sock, uint32_t can_id,
                              const uint8_t* data, uint8_t len)
 {
-    struct canfd_frame frame{};                          
-    frame.can_id = can_id & CAN_SFF_MASK;
-    frame.len    = (len > CANFD_MAX_DLEN) ? CANFD_MAX_DLEN : len;  
-    frame.flags  = CANFD_BRS;                           // ← 开启位速率切换（BRS）
-    memcpy(frame.data, data, frame.len);
+    struct can_frame frame{};
+    frame.can_id  = can_id & CAN_SFF_MASK;  // 11-bit 标准帧
+    frame.can_dlc = len > 8 ? 8 : len;
+    memcpy(frame.data, data, frame.can_dlc);
 
-    ssize_t written = write(sock, &frame, sizeof(struct canfd_frame)); // ← sizeof 也要改
-    if (written != sizeof(struct canfd_frame)) {
-        if (errno == ENOBUFS) return false;
-        perror("[ERROR] write() CANFD frame");
+    ssize_t written = write(sock, &frame, sizeof(struct can_frame));
+    if (written != sizeof(struct can_frame)) {
+        if (errno == ENOBUFS) {
+            // TX 队列已满，跳过本帧，不打印错误（下个周期重试）
+            return false;
+        }
+        perror("[ERROR] write() CAN frame");
         return false;
     }
     return true;
@@ -240,9 +232,9 @@ static std::atomic<bool> g_running{true};
 
 static void recv_thread_fn(int sock)
 {
-    struct canfd_frame frame{};
+    struct can_frame frame{};
     while (g_running.load()) {
-        ssize_t nbytes = read(sock, &frame, sizeof(struct canfd_frame));
+        ssize_t nbytes = read(sock, &frame, sizeof(struct can_frame));
         if (nbytes < 0) {
             if (errno == EINTR || errno == EAGAIN || errno == EWOULDBLOCK)
                 continue;  // 超时或信号，正常循环检查 g_running
@@ -252,7 +244,7 @@ static void recv_thread_fn(int sock)
 
         uint32_t rx_id = frame.can_id & CAN_SFF_MASK;  // 去掉标志位
 
-        if (rx_id == MOTOR_MST_ID && frame.len >= 8) {
+        if (rx_id == MOTOR_MST_ID && frame.can_dlc >= 6) {
             float pos, vel, tau;
             decode_feedback(frame.data, &pos, &vel, &tau);
             printf("[RX] ID=0x%02X | pos=%7.3f rad | vel=%7.3f rad/s | tau=%7.3f Nm\n",
@@ -310,8 +302,8 @@ int main()
     while (g_running.load()) {
         auto t0 = clock::now();
         send_mit_cmd(g_sock, MOTOR_CAN_ID,
-                    /*kp=*/0.0f, /*kd=*/0.5f,
-                    /*q=*/0.0f,  /*dq=*/2.0f, /*tau=*/0.0f);
+                     /*kp=*/0.0f, /*kd=*/0.5f,
+                     /*q=*/0.0f,  /*dq=*/2.0f, /*tau=*/0.0f);
         std::this_thread::sleep_until(t0 + std::chrono::duration_cast<clock::duration>(cycle));
     }
 
