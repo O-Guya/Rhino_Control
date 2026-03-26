@@ -1,0 +1,9 @@
+<library path="dm_gripper_hardware">
+  <class name="dm_gripper_hardware/DmGripperSystem"
+         type="dm_gripper_hardware::DmGripperSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      ros2_control SystemInterface for DM4310 motor-driven gripper via SocketCAN
+    </description>
+  </class>
+</library>
