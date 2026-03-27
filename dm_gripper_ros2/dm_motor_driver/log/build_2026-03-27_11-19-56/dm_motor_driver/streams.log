@@ -1,0 +1,33 @@
+[0.014s] Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver/build/dm_motor_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake /home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver -DCMAKE_INSTALL_PREFIX=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver/install/dm_motor_driver
+[0.060s] -- The C compiler identification is GNU 15.2.0
+[0.133s] -- The CXX compiler identification is GNU 15.2.0
+[0.139s] -- Detecting C compiler ABI info
+[0.194s] -- Detecting C compiler ABI info - done
+[0.211s] -- Check for working C compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[0.212s] -- Detecting C compile features
+[0.212s] -- Detecting C compile features - done
+[0.221s] -- Detecting CXX compiler ABI info
+[0.288s] -- Detecting CXX compiler ABI info - done
+[0.307s] -- Check for working CXX compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[0.307s] -- Detecting CXX compile features
+[0.308s] -- Detecting CXX compile features - done
+[0.317s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.317s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.317s]   has asked CMake to find a package configuration file provided by
+[0.317s]   "ament_cmake", but CMake did not find one.
+[0.317s] 
+[0.317s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.317s]   any of the following names:
+[0.317s] 
+[0.317s]     ament_cmake.cps
+[0.317s]     ament_cmakeConfig.cmake
+[0.317s]     ament_cmake-config.cmake
+[0.318s] 
+[0.318s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.318s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.318s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.318s]   has been installed.
+[0.318s] 
+[0.318s] [0m
+[0.318s] -- Configuring incomplete, errors occurred!
+[0.321s] Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver/build/dm_motor_driver' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake /home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver -DCMAKE_INSTALL_PREFIX=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver/install/dm_motor_driver

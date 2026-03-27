@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/cmake_install.cmake",
+		"/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

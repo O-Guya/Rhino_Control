@@ -21,7 +21,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 
-target_link_libraries(${PROJECT_NAME} dm_motor_driver)
+ament_target_dependencies(${PROJECT_NAME} dm_motor_driver)
 
 ament_export_targets(${PROJECT_NAME}Targets HAS_LIBRARY_TARGET)
 ament_export_include_directories(include)

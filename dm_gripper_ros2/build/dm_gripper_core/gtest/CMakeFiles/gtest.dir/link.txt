@@ -1,0 +1,2 @@
+/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-ar qc libgtest.a "CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-ranlib libgtest.a

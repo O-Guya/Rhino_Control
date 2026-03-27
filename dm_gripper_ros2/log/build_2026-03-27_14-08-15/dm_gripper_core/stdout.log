@@ -1,0 +1,61 @@
+-- Found ament_cmake: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake/cmake)
+-- Found dm_motor_driver: 0.1.0 (/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/cmake)
+-- Found ament_cmake_gtest: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core
+[  5%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/gripper_kinematics.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/contact_detector.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/gripper_state_machine.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/impedance_controller.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/force_position_controller.cpp.o[0m
+[ 38%] Built target gtest_main
+[ 50%] Built target gtest
+[ 55%] [1m[32mLinking CXX shared library libdm_gripper_core.so[0m
+[ 55%] Built target dm_gripper_core
+[ 61%] [32mBuilding CXX object CMakeFiles/test_contact_detector.dir/test/test_contact_detector.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_kinematics.dir/test/test_kinematics.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/test_state_machine.dir/test/test_state_machine.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/test_controllers.dir/test/test_controllers.cpp.o[0m
+[ 88%] [1m[32mLinking CXX executable test_contact_detector[0m
+[ 88%] [1m[32mLinking CXX executable test_controllers[0m
+[ 94%] [1m[32mLinking CXX executable test_state_machine[0m
+[100%] [1m[32mLinking CXX executable test_kinematics[0m
+[100%] Built target test_contact_detector
+[100%] Built target test_controllers
+[100%] Built target test_state_machine
+[100%] Built target test_kinematics
+-- Install configuration: ""
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/library_path.sh
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/library_path.dsv
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/gripper_kinematics.hpp
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/gripper_state_machine.hpp
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/contact_detector.hpp
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/force_position_controller.hpp
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/impedance_controller.hpp
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/libdm_gripper_core.so
+-- Set non-toolchain portion of runtime path of "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/libdm_gripper_core.so" to ""
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/ament_index/resource_index/package_run_dependencies/dm_gripper_core
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/ament_index/resource_index/parent_prefix_path/dm_gripper_core
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/ament_prefix_path.sh
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/ament_prefix_path.dsv
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/path.sh
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/path.dsv
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/local_setup.bash
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/local_setup.sh
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/local_setup.zsh
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/local_setup.dsv
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.dsv
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/ament_index/resource_index/packages/dm_gripper_core
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreTargetsExport.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreTargetsExport-noconfig.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreConfig.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreConfig-version.cmake
+-- Installing: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.xml

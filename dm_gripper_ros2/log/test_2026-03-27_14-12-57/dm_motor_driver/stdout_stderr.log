@@ -1,0 +1,132 @@
+SetCTestConfiguration:BuildDirectory:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+UpdateCTestConfiguration  from :/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+Parse Config file:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+SetCMakeVariable:CTEST_SITE:franka-ubuntu
+SetCMakeVariable:CTEST_SOURCE_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver
+SetCMakeVariable:CTEST_BINARY_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+SetCMakeVariable:CTEST_CONFIGURE_COMMAND:"/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver"
+SetCMakeVariable:CTEST_TEST_TIMEOUT:10000000
+UpdateCTestConfiguration  from :/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+Parse Config file:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+SetCMakeVariable:CTEST_SITE:franka-ubuntu
+SetCMakeVariable:CTEST_SOURCE_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver
+SetCMakeVariable:CTEST_BINARY_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+SetCMakeVariable:CTEST_CONFIGURE_COMMAND:"/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver"
+SetCTestConfiguration:BuildDirectory:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+SetCTestConfiguration:SourceDirectory:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver
+Test project /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_protocol
+
+1: Test command: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml" "--package-name" "dm_motor_driver" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/ament_cmake_gtest/test_protocol.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_protocol" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml"
+1: Working Directory: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver':
+1:  - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_protocol --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml
+1: Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+1: [==========] Running 16 tests from 6 test suites.
+1: [----------] Global test environment set-up.
+1: [----------] 4 tests from FloatUintConversion
+1: [ RUN      ] FloatUintConversion.RoundTrip16bit
+1: [       OK ] FloatUintConversion.RoundTrip16bit (0 ms)
+1: [ RUN      ] FloatUintConversion.RoundTrip12bit
+1: [       OK ] FloatUintConversion.RoundTrip12bit (0 ms)
+1: [ RUN      ] FloatUintConversion.Clamping
+1: [       OK ] FloatUintConversion.Clamping (0 ms)
+1: [ RUN      ] FloatUintConversion.ZeroMapsToMidpoint
+1: [       OK ] FloatUintConversion.ZeroMapsToMidpoint (0 ms)
+1: [----------] 4 tests from FloatUintConversion (0 ms total)
+1: 
+1: [----------] 2 tests from PackMitFrame
+1: [ RUN      ] PackMitFrame.ZeroCommandProducesValidBytes
+1: [       OK ] PackMitFrame.ZeroCommandProducesValidBytes (0 ms)
+1: [ RUN      ] PackMitFrame.RoundTripAllFields
+1: [       OK ] PackMitFrame.RoundTripAllFields (0 ms)
+1: [----------] 2 tests from PackMitFrame (0 ms total)
+1: 
+1: [----------] 2 tests from UnpackFeedback
+1: [ RUN      ] UnpackFeedback.KnownBytesProduceCorrectValues
+1: [       OK ] UnpackFeedback.KnownBytesProduceCorrectValues (0 ms)
+1: [ RUN      ] UnpackFeedback.PositivePosition
+1: [       OK ] UnpackFeedback.PositivePosition (0 ms)
+1: [----------] 2 tests from UnpackFeedback (0 ms total)
+1: 
+1: [----------] 4 tests from SpecialPayloads
+1: [ RUN      ] SpecialPayloads.EnablePayload
+1: [       OK ] SpecialPayloads.EnablePayload (0 ms)
+1: [ RUN      ] SpecialPayloads.DisablePayload
+1: [       OK ] SpecialPayloads.DisablePayload (0 ms)
+1: [ RUN      ] SpecialPayloads.SetZeroPayload
+1: [       OK ] SpecialPayloads.SetZeroPayload (0 ms)
+1: [ RUN      ] SpecialPayloads.ClearErrPayload
+1: [       OK ] SpecialPayloads.ClearErrPayload (0 ms)
+1: [----------] 4 tests from SpecialPayloads (0 ms total)
+1: 
+1: [----------] 2 tests from RegisterPayload
+1: [ RUN      ] RegisterPayload.WriteRegFormat
+1: [       OK ] RegisterPayload.WriteRegFormat (0 ms)
+1: [ RUN      ] RegisterPayload.ReadRegFormat
+1: [       OK ] RegisterPayload.ReadRegFormat (0 ms)
+1: [----------] 2 tests from RegisterPayload (0 ms total)
+1: 
+1: [----------] 2 tests from MotorState
+1: [ RUN      ] MotorState.ErrorStringMapping
+1: [       OK ] MotorState.ErrorStringMapping (0 ms)
+1: [ RUN      ] MotorState.EnabledAndErrorFlags
+1: [       OK ] MotorState.EnabledAndErrorFlags (0 ms)
+1: [----------] 2 tests from MotorState (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 16 tests from 6 test suites ran. (0 ms total)
+1: [  PASSED  ] 16 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml'
+1: -- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml'
+1/2 Test #1: test_protocol ....................   Passed    0.09 sec
+test 2
+    Start 2: test_socketcan_mock
+
+2: Test command: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml" "--package-name" "dm_motor_driver" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/ament_cmake_gtest/test_socketcan_mock.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_socketcan_mock" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml"
+2: Working Directory: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver':
+2:  - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_socketcan_mock --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml
+2: Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+2: [==========] Running 5 tests from 2 test suites.
+2: [----------] Global test environment set-up.
+2: [----------] 2 tests from CanFrame
+2: [ RUN      ] CanFrame.DefaultInit
+2: [       OK ] CanFrame.DefaultInit (0 ms)
+2: [ RUN      ] CanFrame.DataCanBeSet
+2: [       OK ] CanFrame.DataCanBeSet (0 ms)
+2: [----------] 2 tests from CanFrame (0 ms total)
+2: 
+2: [----------] 3 tests from SocketCan
+2: [ RUN      ] SocketCan.ThrowsOnNonexistentInterface
+2: [       OK ] SocketCan.ThrowsOnNonexistentInterface (0 ms)
+2: [ RUN      ] SocketCan.ThrowsOnEmptyInterfaceName
+2: [       OK ] SocketCan.ThrowsOnEmptyInterfaceName (0 ms)
+2: [ RUN      ] SocketCan.MoveConstructorTransfersOwnership
+2: [       OK ] SocketCan.MoveConstructorTransfersOwnership (0 ms)
+2: [----------] 3 tests from SocketCan (0 ms total)
+2: 
+2: [----------] Global test environment tear-down
+2: [==========] 5 tests from 2 test suites ran. (0 ms total)
+2: [  PASSED  ] 5 tests.
+2: -- run_test.py: return code 0
+2: -- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml'
+2: -- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml'
+2/2 Test #2: test_socketcan_mock ..............   Passed    0.05 sec
+
+[0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 2
+
+Label Time Summary:
+gtest    =   0.14 sec*proc (2 tests)
+
+Total Test time (real) =   0.14 sec

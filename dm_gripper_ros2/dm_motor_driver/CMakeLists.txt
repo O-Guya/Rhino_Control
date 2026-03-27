@@ -44,6 +44,14 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/tools/tau_logger.cpp")
   install(TARGETS tau_logger DESTINATION lib/${PROJECT_NAME})
 endif()
 
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/tools/smoke_test.cpp")
+  add_executable(smoke_test tools/smoke_test.cpp)
+  target_include_directories(smoke_test PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include)
+  target_link_libraries(smoke_test ${PROJECT_NAME} pthread)
+  install(TARGETS smoke_test DESTINATION lib/${PROJECT_NAME})
+endif()
+
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
   ament_add_gtest(test_protocol test/test_protocol.cpp)

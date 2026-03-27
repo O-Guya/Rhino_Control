@@ -1,0 +1,3 @@
+[  5%] [1m[32mLinking CXX shared library libdm_gripper_core.so[0m
+[ 16%] Built target gtest_main
+[ 27%] Built target gtest

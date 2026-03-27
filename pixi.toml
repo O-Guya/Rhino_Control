@@ -1,6 +1,6 @@
 [workspace]
 authors = ["O-Guya <trahjy@163.com>"]
-channels = ["conda-forge"]
+channels = ["conda-forge", "robostack-jazzy"]
 name = "Rhino_Control"
 platforms = ["linux-64"]
 version = "0.1.0"
@@ -8,6 +8,8 @@ version = "0.1.0"
 [tasks]
 build-demo = "cd demo/build && cmake .. && make -j$(nproc)"
 run-demo = "cd demo/build && sudo ./dm_socketcan_demo_can"
+build = "cd dm_gripper_ros2 && colcon build"
+test  = "cd dm_gripper_ros2 && colcon test --packages-select dm_motor_driver && colcon test-result --verbose"
 
 [dependencies]
 cmake = ">=4.3.0,<5"
@@ -18,4 +20,10 @@ gxx = ">=15.2.0,<15.3"
 libusb = ">=1.0.29,<2"
 c-compiler = ">=1.0.0,<2"
 cxx-compiler = ">=1.0.0,<2"
-boost = ">=1.85.0,<2"
+# boost 由 ROS 包自动拉取，不需要显式声明（避免版本冲突）
+ros-jazzy-desktop             = "*"
+ros-jazzy-ros2-control        = "*"
+ros-jazzy-hardware-interface  = "*"
+ros-jazzy-controller-manager  = "*"
+ros-jazzy-control-msgs        = "*"
+ros-jazzy-ament-cmake-gtest   = "*"

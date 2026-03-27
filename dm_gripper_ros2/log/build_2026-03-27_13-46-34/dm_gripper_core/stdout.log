@@ -1,0 +1,37 @@
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake/cmake)
+-- Found Python3: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+-- Found dm_motor_driver: 0.1.0 (/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/cmake)
+-- Found ament_cmake_gtest: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core
+[ 16%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/gripper_kinematics.cpp.o[0m
+[ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/gripper_state_machine.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/contact_detector.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/impedance_controller.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/force_position_controller.cpp.o[0m
+[ 44%] [1m[32mLinking CXX shared library libdm_gripper_core.so[0m
+[ 50%] [1m[32mLinking CXX static library libgtest_main.a[0m
+[ 50%] Built target gtest_main
+[ 55%] [1m[32mLinking CXX static library libgtest.a[0m
+[ 55%] Built target gtest

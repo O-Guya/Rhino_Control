@@ -1,0 +1,56 @@
+[0.054s] Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake /home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_gripper_core -DCMAKE_INSTALL_PREFIX=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core
+[0.100s] -- The C compiler identification is GNU 15.2.0
+[0.174s] -- The CXX compiler identification is GNU 15.2.0
+[0.181s] -- Detecting C compiler ABI info
+[0.238s] -- Detecting C compiler ABI info - done
+[0.257s] -- Check for working C compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[0.257s] -- Detecting C compile features
+[0.258s] -- Detecting C compile features - done
+[0.267s] -- Detecting CXX compiler ABI info
+[0.332s] -- Detecting CXX compiler ABI info - done
+[0.352s] -- Check for working CXX compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[0.352s] -- Detecting CXX compile features
+[0.352s] -- Detecting CXX compile features - done
+[0.362s] -- Found ament_cmake: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake/cmake)
+[0.459s] -- Found Python3: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[0.574s] -- Found dm_motor_driver: 0.1.0 (/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/cmake)
+[0.581s] -- Found ament_cmake_gtest: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_gtest/cmake)
+[0.587s] -- Found gtest sources under '/home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.587s] [0mCMake Deprecation Warning at /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[0.587s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.587s]   CMake.
+[0.587s] 
+[0.587s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.587s]   to tell CMake that the project requires at least <min> but has been updated
+[0.588s]   to work with policies introduced by <max> or earlier.
+[0.588s] 
+[0.588s] [0m
+[0.588s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.651s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.651s] -- Check if compiler accepts -pthread
+[0.711s] -- Check if compiler accepts -pthread - yes
+[0.712s] -- Found Threads: TRUE
+[0.792s] -- Configuring done (0.7s)
+[0.805s] -- Generating done (0.0s)
+[0.805s] -- Build files have been written to: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core
+[0.809s] Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core' returned '0': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake /home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_gripper_core -DCMAKE_INSTALL_PREFIX=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core
+[0.810s] Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core -- -j17 -l17
+[0.838s] [ 16%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/gripper_kinematics.cpp.o[0m
+[0.838s] [ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[0.838s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.838s] [ 27%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/gripper_state_machine.cpp.o[0m
+[0.838s] [ 27%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/contact_detector.cpp.o[0m
+[0.838s] [ 33%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/impedance_controller.cpp.o[0m
+[0.838s] [ 38%] [32mBuilding CXX object CMakeFiles/dm_gripper_core.dir/src/force_position_controller.cpp.o[0m
+[0.851s] [ 44%] [1m[32mLinking CXX shared library libdm_gripper_core.so[0m
+[0.859s] /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.2.0/ld: cannot find -ldm_motor_driver: No such file or directory
+[0.867s] collect2: error: ld returned 1 exit status
+[0.868s] gmake[2]: *** [CMakeFiles/dm_gripper_core.dir/build.make:165: libdm_gripper_core.so] Error 1
+[0.869s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/dm_gripper_core.dir/all] Error 2
+[0.869s] gmake[1]: *** Waiting for unfinished jobs....
+[1.590s] [ 50%] [1m[32mLinking CXX static library libgtest_main.a[0m
+[1.611s] [ 50%] Built target gtest_main
+[8.748s] [ 55%] [1m[32mLinking CXX static library libgtest.a[0m
+[8.775s] [ 55%] Built target gtest
+[8.776s] gmake: *** [Makefile:146: all] Error 2
+[8.778s] Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core' returned '2': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core -- -j17 -l17

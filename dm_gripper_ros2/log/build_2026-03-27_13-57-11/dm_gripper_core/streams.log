@@ -1,0 +1,10 @@
+[0.069s] Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core -- -j17 -l17
+[0.096s] [  5%] [1m[32mLinking CXX shared library libdm_gripper_core.so[0m
+[0.099s] [ 16%] Built target gtest_main
+[0.099s] [ 27%] Built target gtest
+[0.104s] /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.2.0/ld: cannot find -ldm_motor_driver: No such file or directory
+[0.112s] collect2: error: ld returned 1 exit status
+[0.113s] gmake[2]: *** [CMakeFiles/dm_gripper_core.dir/build.make:165: libdm_gripper_core.so] Error 1
+[0.113s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/dm_gripper_core.dir/all] Error 2
+[0.113s] gmake: *** [Makefile:146: all] Error 2
+[0.115s] Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core' returned '2': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core -- -j17 -l17

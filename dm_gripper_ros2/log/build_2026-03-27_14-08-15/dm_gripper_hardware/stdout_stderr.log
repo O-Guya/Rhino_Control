@@ -1,0 +1,72 @@
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake/cmake)
+-- Found Python3: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+-- Found hardware_interface: 4.43.0 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/hardware_interface/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found TinyXML2 via Config file: /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/cmake/tinyxml2
+-- Found rmw_implementation_cmake: 7.3.3 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rmw_fastrtps_cpp/cmake)
+-- Found TinyXML2 via Config file: /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/cmake/tinyxml2
+-- Found OpenSSL: /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/libcrypto.so (found version "3.6.1")
+-- Found TinyXML2 via Config file: /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/cmake/tinyxml2
+-- Found FastRTPS: /home/franka/Documents/Rhino_Control/.pixi/envs/default/include (Required is at least version "2.13")
+-- Found TinyXML2 via Config file: /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/cmake/tinyxml2
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[33mCMake Warning (dev) at /home/franka/Documents/Rhino_Control/.pixi/envs/default/share/realtime_tools/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /home/franka/Documents/Rhino_Control/.pixi/envs/default/share/realtime_tools/cmake/realtime_toolsConfig.cmake:41 (include)
+  /home/franka/Documents/Rhino_Control/.pixi/envs/default/share/hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/franka/Documents/Rhino_Control/.pixi/envs/default/share/hardware_interface/cmake/hardware_interfaceConfig.cmake:41 (include)
+  CMakeLists.txt:9 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found dm_motor_driver: 0.1.0 (/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/cmake)
+-- Found dm_gripper_core: 0.1.0 (/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake)
+-- Found ament_cmake_gtest: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0mCMake Deprecation Warning at /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+-- Configuring done (1.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_hardware
+[ 37%] [32mBuilding CXX object CMakeFiles/dm_gripper_hardware.dir/src/dm_gripper_system.cpp.o[0m
+[ 37%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 37%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 50%] [1m[32mLinking CXX shared library libdm_gripper_hardware.so[0m
+[ 50%] Built target dm_gripper_hardware
+[ 62%] [1m[32mLinking CXX static library libgtest_main.a[0m
+[ 62%] Built target gtest_main
+[ 75%] [1m[32mLinking CXX static library libgtest.a[0m
+[ 75%] Built target gtest
+[ 87%] [32mBuilding CXX object CMakeFiles/test_hardware_interface.dir/test/test_hardware_interface.cpp.o[0m
+[100%] [1m[32mLinking CXX executable test_hardware_interface[0m
+[100%] Built target test_hardware_interface

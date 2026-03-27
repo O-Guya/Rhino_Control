@@ -1,0 +1,16 @@
+[0mCMake Deprecation Warning at /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.2.0/ld: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/gripper_action_server.dir/build.make:222: gripper_action_server] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/gripper_action_server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

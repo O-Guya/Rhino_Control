@@ -1,0 +1,274 @@
+[0.899s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-skip', 'dm_gripper_action_server', 'dm_gripper_hardware', 'dm_gripper_bringup']
+[0.899s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=17, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=['dm_gripper_action_server', 'dm_gripper_hardware', 'dm_gripper_bringup'], packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ef3807a1220>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ef3807a1040>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ef3807a1040>>)
+[0.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.956s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extensions ['ignore', 'ignore_ament_install']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extension 'ignore'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extension 'ignore_ament_install'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extensions ['colcon_pkg']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extension 'colcon_pkg'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extensions ['colcon_meta']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extension 'colcon_meta'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extensions ['ros']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_action_server) by extension 'ros'
+[0.981s] DEBUG:colcon.colcon_core.package_identification:Package 'dm_gripper_action_server' with type 'ros.ament_cmake' and name 'dm_gripper_action_server'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extension 'ignore'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extension 'ignore_ament_install'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extensions ['colcon_pkg']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extension 'colcon_pkg'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extensions ['colcon_meta']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extension 'colcon_meta'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extensions ['ros']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_bringup) by extension 'ros'
+[0.982s] DEBUG:colcon.colcon_core.package_identification:Package 'dm_gripper_bringup' with type 'ros.ament_cmake' and name 'dm_gripper_bringup'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extensions ['ignore', 'ignore_ament_install']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extension 'ignore'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extension 'ignore_ament_install'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extensions ['colcon_pkg']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extension 'colcon_pkg'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extensions ['colcon_meta']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extension 'colcon_meta'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extensions ['ros']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_core) by extension 'ros'
+[0.982s] DEBUG:colcon.colcon_core.package_identification:Package 'dm_gripper_core' with type 'ros.ament_cmake' and name 'dm_gripper_core'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extension 'ignore'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extension 'ignore_ament_install'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extensions ['colcon_pkg']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extension 'colcon_pkg'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extensions ['colcon_meta']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extension 'colcon_meta'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extensions ['ros']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_gripper_hardware) by extension 'ros'
+[0.983s] DEBUG:colcon.colcon_core.package_identification:Package 'dm_gripper_hardware' with type 'ros.ament_cmake' and name 'dm_gripper_hardware'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extension 'ignore'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extension 'ignore_ament_install'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extensions ['colcon_pkg']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extension 'colcon_pkg'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extensions ['colcon_meta']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extension 'colcon_meta'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extensions ['ros']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(dm_motor_driver) by extension 'ros'
+[0.984s] DEBUG:colcon.colcon_core.package_identification:Package 'dm_motor_driver' with type 'ros.ament_cmake' and name 'dm_motor_driver'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extensions ['ignore', 'ignore_ament_install']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'ignore'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'ignore_ament_install'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extensions ['colcon_pkg']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'colcon_pkg'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extensions ['colcon_meta']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'colcon_meta'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extensions ['ros']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'ros'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extensions ['cmake', 'python']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'cmake'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'python'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extensions ['python_setup_py']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/experiments) by extension 'python_setup_py'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extensions ['ignore', 'ignore_ament_install']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'ignore'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'ignore_ament_install'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extensions ['colcon_pkg']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'colcon_pkg'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extensions ['colcon_meta']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'colcon_meta'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extensions ['ros']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'ros'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extensions ['cmake', 'python']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'cmake'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'python'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extensions ['python_setup_py']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers) by extension 'python_setup_py'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extensions ['ignore', 'ignore_ament_install']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'ignore'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'ignore_ament_install'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extensions ['colcon_pkg']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'colcon_pkg'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extensions ['colcon_meta']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'colcon_meta'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extensions ['ros']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'ros'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extensions ['cmake', 'python']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'cmake'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'python'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extensions ['python_setup_py']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(docs/superpowers/plans) by extension 'python_setup_py'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.047s] INFO:colcon.colcon_core.package_selection:Skipping package 'dm_gripper_action_server' in 'dm_gripper_action_server'
+[1.047s] INFO:colcon.colcon_core.package_selection:Skipping package 'dm_gripper_hardware' in 'dm_gripper_hardware'
+[1.047s] INFO:colcon.colcon_core.package_selection:Skipping package 'dm_gripper_bringup' in 'dm_gripper_bringup'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'cmake_args' from command line to 'None'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'cmake_target' from command line to 'None'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'dm_motor_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.062s] DEBUG:colcon.colcon_core.verb:Building package 'dm_motor_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver', 'merge_install': False, 'path': '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver', 'symlink_install': False, 'test_result_base': None}
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'cmake_args' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'cmake_target' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'cmake_clean_cache' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'cmake_clean_first' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'cmake_force_configure' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'ament_cmake_args' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'catkin_cmake_args' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'dm_gripper_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.078s] DEBUG:colcon.colcon_core.verb:Building package 'dm_gripper_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core', 'merge_install': False, 'path': '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_gripper_core', 'symlink_install': False, 'test_result_base': None}
+[1.093s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.109s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.109s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver' with build type 'ament_cmake'
+[1.109s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver'
+[1.126s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.127s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver -- -j17 -l17
+[1.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver' returned '0': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver -- -j17 -l17
+[1.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --install /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[1.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dm_motor_driver)
+[1.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver' returned '0': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --install /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[1.283s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver' for CMake module files
+[1.284s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver' for CMake config files
+[1.284s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_motor_driver', 'cmake_prefix_path')
+[1.300s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/cmake_prefix_path.dsv'
+[1.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/cmake_prefix_path.sh'
+[1.301s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib'
+[1.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_motor_driver', 'ld_library_path_lib')
+[1.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/ld_library_path_lib.dsv'
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/ld_library_path_lib.sh'
+[1.317s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/bin'
+[1.317s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/pkgconfig/dm_motor_driver.pc'
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/python3.12/site-packages'
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/bin'
+[1.334s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.dsv'
+[1.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.sh'
+[1.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.bash'
+[1.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.zsh'
+[1.336s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/colcon-core/packages/dm_motor_driver)
+[1.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dm_motor_driver)
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver' for CMake module files
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver' for CMake config files
+[1.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_motor_driver', 'cmake_prefix_path')
+[1.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/cmake_prefix_path.dsv'
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/cmake_prefix_path.sh'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib'
+[1.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_motor_driver', 'ld_library_path_lib')
+[1.423s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/ld_library_path_lib.dsv'
+[1.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/hook/ld_library_path_lib.sh'
+[1.423s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/bin'
+[1.423s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/pkgconfig/dm_motor_driver.pc'
+[1.424s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/python3.12/site-packages'
+[1.424s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/bin'
+[1.439s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.dsv'
+[1.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.sh'
+[1.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.bash'
+[1.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/package.zsh'
+[1.441s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/colcon-core/packages/dm_motor_driver)
+[1.441s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_gripper_core' with build type 'ament_cmake'
+[1.441s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_gripper_core'
+[1.457s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core -- -j17 -l17
+[1.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core' returned '0': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core -- -j17 -l17
+[1.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --install /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core
+[1.603s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dm_gripper_core)
+[1.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core' returned '0': CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --install /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core' for CMake module files
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core' for CMake config files
+[1.621s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_gripper_core', 'cmake_prefix_path')
+[1.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/cmake_prefix_path.dsv'
+[1.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/cmake_prefix_path.sh'
+[1.638s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib'
+[1.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_gripper_core', 'ld_library_path_lib')
+[1.653s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/ld_library_path_lib.dsv'
+[1.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/ld_library_path_lib.sh'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/bin'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/pkgconfig/dm_gripper_core.pc'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/python3.12/site-packages'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/bin'
+[1.670s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.dsv'
+[1.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.sh'
+[1.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.bash'
+[1.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.zsh'
+[1.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/colcon-core/packages/dm_gripper_core)
+[1.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dm_gripper_core)
+[1.732s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core' for CMake module files
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core' for CMake config files
+[1.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_gripper_core', 'cmake_prefix_path')
+[1.748s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/cmake_prefix_path.dsv'
+[1.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/cmake_prefix_path.sh'
+[1.749s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib'
+[1.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm_gripper_core', 'ld_library_path_lib')
+[1.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/ld_library_path_lib.dsv'
+[1.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/hook/ld_library_path_lib.sh'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/bin'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/pkgconfig/dm_gripper_core.pc'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/python3.12/site-packages'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/bin'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.dsv'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.sh'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.bash'
+[1.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.zsh'
+[1.782s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/colcon-core/packages/dm_gripper_core)
+[1.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.783s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.802s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.802s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.802s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.814s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.831s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/local_setup.sh'
+[1.831s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/_local_setup_util_sh.py'
+[1.832s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/setup.sh'
+[1.848s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/local_setup.bash'
+[1.848s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/setup.bash'
+[1.864s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/local_setup.zsh'
+[1.865s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/setup.zsh'

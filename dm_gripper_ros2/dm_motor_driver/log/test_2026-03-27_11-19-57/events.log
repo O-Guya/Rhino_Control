@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000209] (dm_motor_driver) JobQueued: {'identifier': 'dm_motor_driver', 'dependencies': OrderedDict({'dm_motor_driver': '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver/install/dm_motor_driver'})}
+[0.000393] (dm_motor_driver) JobStarted: {'identifier': 'dm_motor_driver'}
+[0.023667] (dm_motor_driver) JobEnded: {'identifier': 'dm_motor_driver', 'rc': 0}
+[0.024159] (-) EventReactorShutdown: {}

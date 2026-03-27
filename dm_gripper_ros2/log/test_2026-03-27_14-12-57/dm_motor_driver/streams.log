@@ -1,0 +1,134 @@
+[0.082s] Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver': CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:/home/franka/Documents/Rhino_Control/.pixi/envs/default:/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr:/home/franka/Documents/Rhino_Control/.pixi/envs/default:/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr:/home/franka/Documents/Rhino_Control/.pixi/envs/default:/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib:/home/franka/Documents/Rhino_Control/.pixi/envs/default/opt/rviz_ogre_vendor/lib:/home/franka/Documents/Rhino_Control/.pixi/envs/default/lib PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.085s] SetCTestConfiguration:BuildDirectory:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[0.086s] UpdateCTestConfiguration  from :/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+[0.086s] Parse Config file:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+[0.086s] SetCMakeVariable:CTEST_SITE:franka-ubuntu
+[0.086s] SetCMakeVariable:CTEST_SOURCE_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver
+[0.086s] SetCMakeVariable:CTEST_BINARY_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[0.086s] SetCMakeVariable:CTEST_CONFIGURE_COMMAND:"/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver"
+[0.086s] SetCMakeVariable:CTEST_TEST_TIMEOUT:10000000
+[0.086s] UpdateCTestConfiguration  from :/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+[0.086s] Parse Config file:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/CTestConfiguration.ini
+[0.086s] SetCMakeVariable:CTEST_SITE:franka-ubuntu
+[0.086s] SetCMakeVariable:CTEST_SOURCE_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver
+[0.086s] SetCMakeVariable:CTEST_BINARY_DIRECTORY:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[0.086s] SetCMakeVariable:CTEST_CONFIGURE_COMMAND:"/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver"
+[0.086s] SetCTestConfiguration:BuildDirectory:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[0.087s] SetCTestConfiguration:SourceDirectory:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_motor_driver
+[0.087s] Test project /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[0.087s] Constructing a list of tests
+[0.087s] Done constructing a list of tests
+[0.087s] Updating test list for fixtures
+[0.087s] Added 0 tests to meet fixture requirements
+[0.087s] Checking test dependency graph...
+[0.087s] Checking test dependency graph end
+[0.087s] test 1
+[0.087s]     Start 1: test_protocol
+[0.087s] 
+[0.087s] 1: Test command: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml" "--package-name" "dm_motor_driver" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/ament_cmake_gtest/test_protocol.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_protocol" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml"
+[0.087s] 1: Working Directory: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[0.087s] 1: Test timeout computed to be: 60
+[0.168s] 1: -- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver':
+[0.168s] 1:  - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_protocol --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml
+[0.170s] 1: Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[0.170s] 1: [==========] Running 16 tests from 6 test suites.
+[0.170s] 1: [----------] Global test environment set-up.
+[0.170s] 1: [----------] 4 tests from FloatUintConversion
+[0.170s] 1: [ RUN      ] FloatUintConversion.RoundTrip16bit
+[0.170s] 1: [       OK ] FloatUintConversion.RoundTrip16bit (0 ms)
+[0.170s] 1: [ RUN      ] FloatUintConversion.RoundTrip12bit
+[0.170s] 1: [       OK ] FloatUintConversion.RoundTrip12bit (0 ms)
+[0.170s] 1: [ RUN      ] FloatUintConversion.Clamping
+[0.170s] 1: [       OK ] FloatUintConversion.Clamping (0 ms)
+[0.171s] 1: [ RUN      ] FloatUintConversion.ZeroMapsToMidpoint
+[0.171s] 1: [       OK ] FloatUintConversion.ZeroMapsToMidpoint (0 ms)
+[0.171s] 1: [----------] 4 tests from FloatUintConversion (0 ms total)
+[0.171s] 1: 
+[0.171s] 1: [----------] 2 tests from PackMitFrame
+[0.171s] 1: [ RUN      ] PackMitFrame.ZeroCommandProducesValidBytes
+[0.171s] 1: [       OK ] PackMitFrame.ZeroCommandProducesValidBytes (0 ms)
+[0.171s] 1: [ RUN      ] PackMitFrame.RoundTripAllFields
+[0.171s] 1: [       OK ] PackMitFrame.RoundTripAllFields (0 ms)
+[0.171s] 1: [----------] 2 tests from PackMitFrame (0 ms total)
+[0.171s] 1: 
+[0.171s] 1: [----------] 2 tests from UnpackFeedback
+[0.171s] 1: [ RUN      ] UnpackFeedback.KnownBytesProduceCorrectValues
+[0.171s] 1: [       OK ] UnpackFeedback.KnownBytesProduceCorrectValues (0 ms)
+[0.171s] 1: [ RUN      ] UnpackFeedback.PositivePosition
+[0.171s] 1: [       OK ] UnpackFeedback.PositivePosition (0 ms)
+[0.171s] 1: [----------] 2 tests from UnpackFeedback (0 ms total)
+[0.172s] 1: 
+[0.172s] 1: [----------] 4 tests from SpecialPayloads
+[0.172s] 1: [ RUN      ] SpecialPayloads.EnablePayload
+[0.172s] 1: [       OK ] SpecialPayloads.EnablePayload (0 ms)
+[0.172s] 1: [ RUN      ] SpecialPayloads.DisablePayload
+[0.172s] 1: [       OK ] SpecialPayloads.DisablePayload (0 ms)
+[0.172s] 1: [ RUN      ] SpecialPayloads.SetZeroPayload
+[0.172s] 1: [       OK ] SpecialPayloads.SetZeroPayload (0 ms)
+[0.172s] 1: [ RUN      ] SpecialPayloads.ClearErrPayload
+[0.172s] 1: [       OK ] SpecialPayloads.ClearErrPayload (0 ms)
+[0.172s] 1: [----------] 4 tests from SpecialPayloads (0 ms total)
+[0.172s] 1: 
+[0.172s] 1: [----------] 2 tests from RegisterPayload
+[0.172s] 1: [ RUN      ] RegisterPayload.WriteRegFormat
+[0.172s] 1: [       OK ] RegisterPayload.WriteRegFormat (0 ms)
+[0.172s] 1: [ RUN      ] RegisterPayload.ReadRegFormat
+[0.172s] 1: [       OK ] RegisterPayload.ReadRegFormat (0 ms)
+[0.172s] 1: [----------] 2 tests from RegisterPayload (0 ms total)
+[0.173s] 1: 
+[0.173s] 1: [----------] 2 tests from MotorState
+[0.173s] 1: [ RUN      ] MotorState.ErrorStringMapping
+[0.173s] 1: [       OK ] MotorState.ErrorStringMapping (0 ms)
+[0.173s] 1: [ RUN      ] MotorState.EnabledAndErrorFlags
+[0.173s] 1: [       OK ] MotorState.EnabledAndErrorFlags (0 ms)
+[0.173s] 1: [----------] 2 tests from MotorState (0 ms total)
+[0.173s] 1: 
+[0.173s] 1: [----------] Global test environment tear-down
+[0.173s] 1: [==========] 16 tests from 6 test suites ran. (0 ms total)
+[0.173s] 1: [  PASSED  ] 16 tests.
+[0.173s] 1: -- run_test.py: return code 0
+[0.173s] 1: -- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml'
+[0.173s] 1: -- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_protocol.gtest.xml'
+[0.177s] 1/2 Test #1: test_protocol ....................   Passed    0.09 sec
+[0.177s] test 2
+[0.177s]     Start 2: test_socketcan_mock
+[0.178s] 
+[0.178s] 2: Test command: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml" "--package-name" "dm_motor_driver" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/ament_cmake_gtest/test_socketcan_mock.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_socketcan_mock" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml"
+[0.178s] 2: Working Directory: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver
+[0.178s] 2: Test timeout computed to be: 60
+[0.219s] 2: -- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver':
+[0.219s] 2:  - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_socketcan_mock --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml
+[0.221s] 2: Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[0.221s] 2: [==========] Running 5 tests from 2 test suites.
+[0.221s] 2: [----------] Global test environment set-up.
+[0.221s] 2: [----------] 2 tests from CanFrame
+[0.221s] 2: [ RUN      ] CanFrame.DefaultInit
+[0.221s] 2: [       OK ] CanFrame.DefaultInit (0 ms)
+[0.221s] 2: [ RUN      ] CanFrame.DataCanBeSet
+[0.221s] 2: [       OK ] CanFrame.DataCanBeSet (0 ms)
+[0.221s] 2: [----------] 2 tests from CanFrame (0 ms total)
+[0.221s] 2: 
+[0.221s] 2: [----------] 3 tests from SocketCan
+[0.222s] 2: [ RUN      ] SocketCan.ThrowsOnNonexistentInterface
+[0.222s] 2: [       OK ] SocketCan.ThrowsOnNonexistentInterface (0 ms)
+[0.222s] 2: [ RUN      ] SocketCan.ThrowsOnEmptyInterfaceName
+[0.222s] 2: [       OK ] SocketCan.ThrowsOnEmptyInterfaceName (0 ms)
+[0.222s] 2: [ RUN      ] SocketCan.MoveConstructorTransfersOwnership
+[0.222s] 2: [       OK ] SocketCan.MoveConstructorTransfersOwnership (0 ms)
+[0.222s] 2: [----------] 3 tests from SocketCan (0 ms total)
+[0.222s] 2: 
+[0.222s] 2: [----------] Global test environment tear-down
+[0.222s] 2: [==========] 5 tests from 2 test suites ran. (0 ms total)
+[0.222s] 2: [  PASSED  ] 5 tests.
+[0.222s] 2: -- run_test.py: return code 0
+[0.222s] 2: -- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml'
+[0.222s] 2: -- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver/test_results/dm_motor_driver/test_socketcan_mock.gtest.xml'
+[0.228s] 2/2 Test #2: test_socketcan_mock ..............   Passed    0.05 sec
+[0.228s] 
+[0.228s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 2
+[0.228s] 
+[0.228s] Label Time Summary:
+[0.228s] gtest    =   0.14 sec*proc (2 tests)
+[0.228s] 
+[0.229s] Total Test time (real) =   0.14 sec
+[0.234s] Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_motor_driver' returned '0': CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:/home/franka/Documents/Rhino_Control/.pixi/envs/default:/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr:/home/franka/Documents/Rhino_Control/.pixi/envs/default:/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr:/home/franka/Documents/Rhino_Control/.pixi/envs/default:/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib:/home/franka/Documents/Rhino_Control/.pixi/envs/default/opt/rviz_ogre_vendor/lib:/home/franka/Documents/Rhino_Control/.pixi/envs/default/lib PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

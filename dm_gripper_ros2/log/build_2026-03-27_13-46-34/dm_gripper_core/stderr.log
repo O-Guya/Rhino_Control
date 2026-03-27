@@ -1,0 +1,15 @@
+[0mCMake Deprecation Warning at /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.2.0/ld: cannot find -ldm_motor_driver: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/dm_gripper_core.dir/build.make:165: libdm_gripper_core.so] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/dm_gripper_core.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

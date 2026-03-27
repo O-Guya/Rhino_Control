@@ -1,0 +1,65 @@
+[0.130s] Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_action_server': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake /home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_gripper_action_server -DCMAKE_INSTALL_PREFIX=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_action_server
+[0.177s] -- The C compiler identification is GNU 15.2.0
+[0.250s] -- The CXX compiler identification is GNU 15.2.0
+[0.257s] -- Detecting C compiler ABI info
+[0.315s] -- Detecting C compiler ABI info - done
+[0.335s] -- Check for working C compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[0.335s] -- Detecting C compile features
+[0.335s] -- Detecting C compile features - done
+[0.344s] -- Detecting CXX compiler ABI info
+[0.407s] -- Detecting CXX compiler ABI info - done
+[0.428s] -- Check for working CXX compiler: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[0.428s] -- Detecting CXX compile features
+[0.429s] -- Detecting CXX compile features - done
+[0.438s] -- Found ament_cmake: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake/cmake)
+[0.533s] -- Found Python3: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[0.652s] -- Found rclcpp: 28.1.16 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rclcpp/cmake)
+[0.709s] -- Found rosidl_generator_c: 4.6.7 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rosidl_generator_c/cmake)
+[0.732s] -- Found rosidl_generator_cpp: 4.6.7 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+[0.758s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.786s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.901s] -- Found rmw_implementation_cmake: 7.3.3 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rmw_implementation_cmake/cmake)
+[0.906s] -- Found rmw_fastrtps_cpp: 8.4.3 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rmw_fastrtps_cpp/cmake)
+[1.229s] -- Found OpenSSL: /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/libcrypto.so (found version "3.6.1")
+[1.261s] -- Found FastRTPS: /home/franka/Documents/Rhino_Control/.pixi/envs/default/include (Required is at least version "2.13")
+[1.306s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.411s] -- Found rclcpp_action: 28.1.16 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rclcpp_action/cmake)
+[1.475s] -- Found control_msgs: 5.8.0 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/control_msgs/cmake)
+[1.634s] -- Found dm_gripper_core: 0.1.0 (/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake)
+[1.644s] -- Found ament_cmake_gtest: 2.5.5 (/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_gtest/cmake)
+[1.649s] -- Found gtest sources under '/home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.650s] [0mCMake Deprecation Warning at /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[1.650s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.650s]   CMake.
+[1.650s] 
+[1.650s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.650s]   to tell CMake that the project requires at least <min> but has been updated
+[1.650s]   to work with policies introduced by <max> or earlier.
+[1.650s] 
+[1.651s] [0m
+[1.651s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.710s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.710s] -- Check if compiler accepts -pthread
+[1.770s] -- Check if compiler accepts -pthread - yes
+[1.771s] -- Found Threads: TRUE
+[1.847s] -- Configuring done (1.7s)
+[1.872s] -- Generating done (0.0s)
+[1.873s] -- Build files have been written to: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_action_server
+[1.881s] Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_action_server' returned '0': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake /home/franka/Documents/Rhino_Control/dm_gripper_ros2/dm_gripper_action_server -DCMAKE_INSTALL_PREFIX=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_action_server
+[1.883s] Invoking command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_action_server': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_action_server -- -j17 -l17
+[1.912s] [ 12%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.912s] [ 37%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.912s] [ 37%] [32mBuilding CXX object CMakeFiles/gripper_action_server.dir/src/gripper_action_server.cpp.o[0m
+[1.925s] [ 50%] [1m[32mLinking CXX executable gripper_action_server[0m
+[2.094s] /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.2.0/ld: /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o: in function `_start':
+[2.094s] (.text+0x24): undefined reference to `main'
+[2.096s] collect2: error: ld returned 1 exit status
+[2.098s] gmake[2]: *** [CMakeFiles/gripper_action_server.dir/build.make:222: gripper_action_server] Error 1
+[2.098s] gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/gripper_action_server.dir/all] Error 2
+[2.098s] gmake[1]: *** Waiting for unfinished jobs....
+[2.676s] [ 62%] [1m[32mLinking CXX static library libgtest_main.a[0m
+[2.698s] [ 62%] Built target gtest_main
+[9.674s] [ 75%] [1m[32mLinking CXX static library libgtest.a[0m
+[9.701s] [ 75%] Built target gtest
+[9.702s] gmake: *** [Makefile:146: all] Error 2
+[9.704s] Invoked command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_action_server' returned '2': AMENT_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core:${CMAKE_PREFIX_PATH} CONDA_ENV_SHLVL_2_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_3_PIXI_PROMPT=(Rhino_Control) CONDA_ENV_SHLVL_4_PIXI_PROMPT=(Rhino_Control) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(Rhino_Control) PS1=(Rhino_Control) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/cmake --build /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_action_server -- -j17 -l17
