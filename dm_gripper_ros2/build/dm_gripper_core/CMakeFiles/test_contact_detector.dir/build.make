@@ -98,7 +98,7 @@ test_contact_detector: CMakeFiles/test_contact_detector.dir/build.make
 test_contact_detector: CMakeFiles/test_contact_detector.dir/compiler_depend.ts
 test_contact_detector: gtest/libgtest_main.a
 test_contact_detector: gtest/libgtest.a
-test_contact_detector: libdm_gripper_core.so
+test_contact_detector: libdm_gripper_core.a
 test_contact_detector: /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/libdm_motor_driver.so
 test_contact_detector: CMakeFiles/test_contact_detector.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_contact_detector"

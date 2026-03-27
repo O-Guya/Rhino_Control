@@ -1,11 +1,9 @@
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/library_path.sh
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/library_path.dsv
+/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/libdm_gripper_core.a
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/gripper_kinematics.hpp
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/gripper_state_machine.hpp
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/contact_detector.hpp
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/force_position_controller.hpp
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/include/dm_gripper_core/impedance_controller.hpp
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/lib/libdm_gripper_core.so
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/ament_index/resource_index/package_run_dependencies/dm_gripper_core
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/ament_index/resource_index/parent_prefix_path/dm_gripper_core
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/environment/ament_prefix_path.sh
@@ -18,12 +16,6 @@
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/local_setup.dsv
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.dsv
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/ament_index/resource_index/packages/dm_gripper_core
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreTargetsExport.cmake
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreTargetsExport-noconfig.cmake
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_targets-extras.cmake
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_include_directories-extras.cmake
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_libraries-extras.cmake
-/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/ament_cmake_export_dependencies-extras.cmake
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreConfig.cmake
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/cmake/dm_gripper_coreConfig-version.cmake
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core/share/dm_gripper_core/package.xml

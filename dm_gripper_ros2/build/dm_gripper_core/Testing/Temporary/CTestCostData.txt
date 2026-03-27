@@ -1,0 +1,6 @@
+test_gripper_kinematics 1 0.0550502
+test_contact_detector 1 0.0490501
+test_gripper_state_machine 1 0.0493254
+test_impedance_controller 1 0.0487508
+test_force_position_ctrl 1 0.0496011
+---

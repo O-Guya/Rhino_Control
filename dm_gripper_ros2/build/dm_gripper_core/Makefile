@@ -211,17 +211,17 @@ dm_gripper_core/fast:
 .PHONY : dm_gripper_core/fast
 
 #=============================================================================
-# Target rules for targets named test_kinematics
+# Target rules for targets named test_gripper_kinematics
 
 # Build rule for target.
-test_kinematics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_kinematics
-.PHONY : test_kinematics
+test_gripper_kinematics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_gripper_kinematics
+.PHONY : test_gripper_kinematics
 
 # fast build rule for target.
-test_kinematics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/build
-.PHONY : test_kinematics/fast
+test_gripper_kinematics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/build
+.PHONY : test_gripper_kinematics/fast
 
 #=============================================================================
 # Target rules for targets named test_contact_detector
@@ -237,30 +237,43 @@ test_contact_detector/fast:
 .PHONY : test_contact_detector/fast
 
 #=============================================================================
-# Target rules for targets named test_state_machine
+# Target rules for targets named test_gripper_state_machine
 
 # Build rule for target.
-test_state_machine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_state_machine
-.PHONY : test_state_machine
+test_gripper_state_machine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_gripper_state_machine
+.PHONY : test_gripper_state_machine
 
 # fast build rule for target.
-test_state_machine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/build
-.PHONY : test_state_machine/fast
+test_gripper_state_machine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/build
+.PHONY : test_gripper_state_machine/fast
 
 #=============================================================================
-# Target rules for targets named test_controllers
+# Target rules for targets named test_impedance_controller
 
 # Build rule for target.
-test_controllers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_controllers
-.PHONY : test_controllers
+test_impedance_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_impedance_controller
+.PHONY : test_impedance_controller
 
 # fast build rule for target.
-test_controllers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/build
-.PHONY : test_controllers/fast
+test_impedance_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/build
+.PHONY : test_impedance_controller/fast
+
+#=============================================================================
+# Target rules for targets named test_force_position_ctrl
+
+# Build rule for target.
+test_force_position_ctrl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_force_position_ctrl
+.PHONY : test_force_position_ctrl
+
+# fast build rule for target.
+test_force_position_ctrl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/build
+.PHONY : test_force_position_ctrl/fast
 
 #=============================================================================
 # Target rules for targets named gtest
@@ -432,77 +445,101 @@ test/test_contact_detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_contact_detector.dir/build.make CMakeFiles/test_contact_detector.dir/test/test_contact_detector.cpp.s
 .PHONY : test/test_contact_detector.cpp.s
 
-test/test_controllers.o: test/test_controllers.cpp.o
-.PHONY : test/test_controllers.o
+test/test_force_position_controller.o: test/test_force_position_controller.cpp.o
+.PHONY : test/test_force_position_controller.o
 
 # target to build an object file
-test/test_controllers.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/test/test_controllers.cpp.o
-.PHONY : test/test_controllers.cpp.o
+test/test_force_position_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/test/test_force_position_controller.cpp.o
+.PHONY : test/test_force_position_controller.cpp.o
 
-test/test_controllers.i: test/test_controllers.cpp.i
-.PHONY : test/test_controllers.i
+test/test_force_position_controller.i: test/test_force_position_controller.cpp.i
+.PHONY : test/test_force_position_controller.i
 
 # target to preprocess a source file
-test/test_controllers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/test/test_controllers.cpp.i
-.PHONY : test/test_controllers.cpp.i
+test/test_force_position_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/test/test_force_position_controller.cpp.i
+.PHONY : test/test_force_position_controller.cpp.i
 
-test/test_controllers.s: test/test_controllers.cpp.s
-.PHONY : test/test_controllers.s
+test/test_force_position_controller.s: test/test_force_position_controller.cpp.s
+.PHONY : test/test_force_position_controller.s
 
 # target to generate assembly for a file
-test/test_controllers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/test/test_controllers.cpp.s
-.PHONY : test/test_controllers.cpp.s
+test/test_force_position_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/test/test_force_position_controller.cpp.s
+.PHONY : test/test_force_position_controller.cpp.s
 
-test/test_kinematics.o: test/test_kinematics.cpp.o
-.PHONY : test/test_kinematics.o
+test/test_gripper_kinematics.o: test/test_gripper_kinematics.cpp.o
+.PHONY : test/test_gripper_kinematics.o
 
 # target to build an object file
-test/test_kinematics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/test/test_kinematics.cpp.o
-.PHONY : test/test_kinematics.cpp.o
+test/test_gripper_kinematics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/test/test_gripper_kinematics.cpp.o
+.PHONY : test/test_gripper_kinematics.cpp.o
 
-test/test_kinematics.i: test/test_kinematics.cpp.i
-.PHONY : test/test_kinematics.i
+test/test_gripper_kinematics.i: test/test_gripper_kinematics.cpp.i
+.PHONY : test/test_gripper_kinematics.i
 
 # target to preprocess a source file
-test/test_kinematics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/test/test_kinematics.cpp.i
-.PHONY : test/test_kinematics.cpp.i
+test/test_gripper_kinematics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/test/test_gripper_kinematics.cpp.i
+.PHONY : test/test_gripper_kinematics.cpp.i
 
-test/test_kinematics.s: test/test_kinematics.cpp.s
-.PHONY : test/test_kinematics.s
+test/test_gripper_kinematics.s: test/test_gripper_kinematics.cpp.s
+.PHONY : test/test_gripper_kinematics.s
 
 # target to generate assembly for a file
-test/test_kinematics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/test/test_kinematics.cpp.s
-.PHONY : test/test_kinematics.cpp.s
+test/test_gripper_kinematics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/test/test_gripper_kinematics.cpp.s
+.PHONY : test/test_gripper_kinematics.cpp.s
 
-test/test_state_machine.o: test/test_state_machine.cpp.o
-.PHONY : test/test_state_machine.o
+test/test_gripper_state_machine.o: test/test_gripper_state_machine.cpp.o
+.PHONY : test/test_gripper_state_machine.o
 
 # target to build an object file
-test/test_state_machine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/test/test_state_machine.cpp.o
-.PHONY : test/test_state_machine.cpp.o
+test/test_gripper_state_machine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/test/test_gripper_state_machine.cpp.o
+.PHONY : test/test_gripper_state_machine.cpp.o
 
-test/test_state_machine.i: test/test_state_machine.cpp.i
-.PHONY : test/test_state_machine.i
+test/test_gripper_state_machine.i: test/test_gripper_state_machine.cpp.i
+.PHONY : test/test_gripper_state_machine.i
 
 # target to preprocess a source file
-test/test_state_machine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/test/test_state_machine.cpp.i
-.PHONY : test/test_state_machine.cpp.i
+test/test_gripper_state_machine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/test/test_gripper_state_machine.cpp.i
+.PHONY : test/test_gripper_state_machine.cpp.i
 
-test/test_state_machine.s: test/test_state_machine.cpp.s
-.PHONY : test/test_state_machine.s
+test/test_gripper_state_machine.s: test/test_gripper_state_machine.cpp.s
+.PHONY : test/test_gripper_state_machine.s
 
 # target to generate assembly for a file
-test/test_state_machine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/test/test_state_machine.cpp.s
-.PHONY : test/test_state_machine.cpp.s
+test/test_gripper_state_machine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/test/test_gripper_state_machine.cpp.s
+.PHONY : test/test_gripper_state_machine.cpp.s
+
+test/test_impedance_controller.o: test/test_impedance_controller.cpp.o
+.PHONY : test/test_impedance_controller.o
+
+# target to build an object file
+test/test_impedance_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/test/test_impedance_controller.cpp.o
+.PHONY : test/test_impedance_controller.cpp.o
+
+test/test_impedance_controller.i: test/test_impedance_controller.cpp.i
+.PHONY : test/test_impedance_controller.i
+
+# target to preprocess a source file
+test/test_impedance_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/test/test_impedance_controller.cpp.i
+.PHONY : test/test_impedance_controller.cpp.i
+
+test/test_impedance_controller.s: test/test_impedance_controller.cpp.s
+.PHONY : test/test_impedance_controller.s
+
+# target to generate assembly for a file
+test/test_impedance_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/test/test_impedance_controller.cpp.s
+.PHONY : test/test_impedance_controller.cpp.s
 
 # Help Target
 help:
@@ -523,9 +560,10 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test_contact_detector"
-	@echo "... test_controllers"
-	@echo "... test_kinematics"
-	@echo "... test_state_machine"
+	@echo "... test_force_position_ctrl"
+	@echo "... test_gripper_kinematics"
+	@echo "... test_gripper_state_machine"
+	@echo "... test_impedance_controller"
 	@echo "... src/contact_detector.o"
 	@echo "... src/contact_detector.i"
 	@echo "... src/contact_detector.s"
@@ -544,15 +582,18 @@ help:
 	@echo "... test/test_contact_detector.o"
 	@echo "... test/test_contact_detector.i"
 	@echo "... test/test_contact_detector.s"
-	@echo "... test/test_controllers.o"
-	@echo "... test/test_controllers.i"
-	@echo "... test/test_controllers.s"
-	@echo "... test/test_kinematics.o"
-	@echo "... test/test_kinematics.i"
-	@echo "... test/test_kinematics.s"
-	@echo "... test/test_state_machine.o"
-	@echo "... test/test_state_machine.i"
-	@echo "... test/test_state_machine.s"
+	@echo "... test/test_force_position_controller.o"
+	@echo "... test/test_force_position_controller.i"
+	@echo "... test/test_force_position_controller.s"
+	@echo "... test/test_gripper_kinematics.o"
+	@echo "... test/test_gripper_kinematics.i"
+	@echo "... test/test_gripper_kinematics.s"
+	@echo "... test/test_gripper_state_machine.o"
+	@echo "... test/test_gripper_state_machine.i"
+	@echo "... test/test_gripper_state_machine.s"
+	@echo "... test/test_impedance_controller.o"
+	@echo "... test/test_impedance_controller.i"
+	@echo "... test/test_impedance_controller.s"
 .PHONY : help
 
 

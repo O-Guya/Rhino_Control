@@ -64,19 +64,21 @@ CMAKE_BINARY_DIR = /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm
 
 # The main recursive "all" target.
 all: CMakeFiles/dm_gripper_core.dir/all
-all: CMakeFiles/test_kinematics.dir/all
+all: CMakeFiles/test_gripper_kinematics.dir/all
 all: CMakeFiles/test_contact_detector.dir/all
-all: CMakeFiles/test_state_machine.dir/all
-all: CMakeFiles/test_controllers.dir/all
+all: CMakeFiles/test_gripper_state_machine.dir/all
+all: CMakeFiles/test_impedance_controller.dir/all
+all: CMakeFiles/test_force_position_ctrl.dir/all
 all: gtest/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/dm_gripper_core.dir/codegen
-codegen: CMakeFiles/test_kinematics.dir/codegen
+codegen: CMakeFiles/test_gripper_kinematics.dir/codegen
 codegen: CMakeFiles/test_contact_detector.dir/codegen
-codegen: CMakeFiles/test_state_machine.dir/codegen
-codegen: CMakeFiles/test_controllers.dir/codegen
+codegen: CMakeFiles/test_gripper_state_machine.dir/codegen
+codegen: CMakeFiles/test_impedance_controller.dir/codegen
+codegen: CMakeFiles/test_force_position_ctrl.dir/codegen
 codegen: gtest/codegen
 .PHONY : codegen
 
@@ -88,10 +90,11 @@ preinstall: gtest/preinstall
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/dm_gripper_core_uninstall.dir/clean
 clean: CMakeFiles/dm_gripper_core.dir/clean
-clean: CMakeFiles/test_kinematics.dir/clean
+clean: CMakeFiles/test_gripper_kinematics.dir/clean
 clean: CMakeFiles/test_contact_detector.dir/clean
-clean: CMakeFiles/test_state_machine.dir/clean
-clean: CMakeFiles/test_controllers.dir/clean
+clean: CMakeFiles/test_gripper_state_machine.dir/clean
+clean: CMakeFiles/test_impedance_controller.dir/clean
+clean: CMakeFiles/test_force_position_ctrl.dir/clean
 clean: gtest/clean
 .PHONY : clean
 
@@ -212,38 +215,38 @@ CMakeFiles/dm_gripper_core.dir/clean:
 .PHONY : CMakeFiles/dm_gripper_core.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_kinematics.dir
+# Target rules for target CMakeFiles/test_gripper_kinematics.dir
 
 # All Build rule for target.
-CMakeFiles/test_kinematics.dir/all: CMakeFiles/dm_gripper_core.dir/all
-CMakeFiles/test_kinematics.dir/all: gtest/CMakeFiles/gtest.dir/all
-CMakeFiles/test_kinematics.dir/all: gtest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=15,16 "Built target test_kinematics"
-.PHONY : CMakeFiles/test_kinematics.dir/all
+CMakeFiles/test_gripper_kinematics.dir/all: CMakeFiles/dm_gripper_core.dir/all
+CMakeFiles/test_gripper_kinematics.dir/all: gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_gripper_kinematics.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=15,16 "Built target test_gripper_kinematics"
+.PHONY : CMakeFiles/test_gripper_kinematics.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_kinematics.dir/rule: cmake_check_build_system
+CMakeFiles/test_gripper_kinematics.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_kinematics.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_gripper_kinematics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 0
-.PHONY : CMakeFiles/test_kinematics.dir/rule
+.PHONY : CMakeFiles/test_gripper_kinematics.dir/rule
 
 # Convenience name for target.
-test_kinematics: CMakeFiles/test_kinematics.dir/rule
-.PHONY : test_kinematics
+test_gripper_kinematics: CMakeFiles/test_gripper_kinematics.dir/rule
+.PHONY : test_gripper_kinematics
 
 # codegen rule for target.
-CMakeFiles/test_kinematics.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=15,16 "Finished codegen for target test_kinematics"
-.PHONY : CMakeFiles/test_kinematics.dir/codegen
+CMakeFiles/test_gripper_kinematics.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=15,16 "Finished codegen for target test_gripper_kinematics"
+.PHONY : CMakeFiles/test_gripper_kinematics.dir/codegen
 
 # clean rule for target.
-CMakeFiles/test_kinematics.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kinematics.dir/build.make CMakeFiles/test_kinematics.dir/clean
-.PHONY : CMakeFiles/test_kinematics.dir/clean
+CMakeFiles/test_gripper_kinematics.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_kinematics.dir/build.make CMakeFiles/test_gripper_kinematics.dir/clean
+.PHONY : CMakeFiles/test_gripper_kinematics.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_contact_detector.dir
@@ -280,72 +283,106 @@ CMakeFiles/test_contact_detector.dir/clean:
 .PHONY : CMakeFiles/test_contact_detector.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_state_machine.dir
+# Target rules for target CMakeFiles/test_gripper_state_machine.dir
 
 # All Build rule for target.
-CMakeFiles/test_state_machine.dir/all: CMakeFiles/dm_gripper_core.dir/all
-CMakeFiles/test_state_machine.dir/all: gtest/CMakeFiles/gtest.dir/all
-CMakeFiles/test_state_machine.dir/all: gtest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=17,18 "Built target test_state_machine"
-.PHONY : CMakeFiles/test_state_machine.dir/all
+CMakeFiles/test_gripper_state_machine.dir/all: CMakeFiles/dm_gripper_core.dir/all
+CMakeFiles/test_gripper_state_machine.dir/all: gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_gripper_state_machine.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=17,18 "Built target test_gripper_state_machine"
+.PHONY : CMakeFiles/test_gripper_state_machine.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_state_machine.dir/rule: cmake_check_build_system
+CMakeFiles/test_gripper_state_machine.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_state_machine.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_gripper_state_machine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 0
-.PHONY : CMakeFiles/test_state_machine.dir/rule
+.PHONY : CMakeFiles/test_gripper_state_machine.dir/rule
 
 # Convenience name for target.
-test_state_machine: CMakeFiles/test_state_machine.dir/rule
-.PHONY : test_state_machine
+test_gripper_state_machine: CMakeFiles/test_gripper_state_machine.dir/rule
+.PHONY : test_gripper_state_machine
 
 # codegen rule for target.
-CMakeFiles/test_state_machine.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=17,18 "Finished codegen for target test_state_machine"
-.PHONY : CMakeFiles/test_state_machine.dir/codegen
+CMakeFiles/test_gripper_state_machine.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=17,18 "Finished codegen for target test_gripper_state_machine"
+.PHONY : CMakeFiles/test_gripper_state_machine.dir/codegen
 
 # clean rule for target.
-CMakeFiles/test_state_machine.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_state_machine.dir/build.make CMakeFiles/test_state_machine.dir/clean
-.PHONY : CMakeFiles/test_state_machine.dir/clean
+CMakeFiles/test_gripper_state_machine.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gripper_state_machine.dir/build.make CMakeFiles/test_gripper_state_machine.dir/clean
+.PHONY : CMakeFiles/test_gripper_state_machine.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_controllers.dir
+# Target rules for target CMakeFiles/test_impedance_controller.dir
 
 # All Build rule for target.
-CMakeFiles/test_controllers.dir/all: CMakeFiles/dm_gripper_core.dir/all
-CMakeFiles/test_controllers.dir/all: gtest/CMakeFiles/gtest.dir/all
-CMakeFiles/test_controllers.dir/all: gtest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=13,14 "Built target test_controllers"
-.PHONY : CMakeFiles/test_controllers.dir/all
+CMakeFiles/test_impedance_controller.dir/all: CMakeFiles/dm_gripper_core.dir/all
+CMakeFiles/test_impedance_controller.dir/all: gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_impedance_controller.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=19,20 "Built target test_impedance_controller"
+.PHONY : CMakeFiles/test_impedance_controller.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_controllers.dir/rule: cmake_check_build_system
+CMakeFiles/test_impedance_controller.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_controllers.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_impedance_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 0
-.PHONY : CMakeFiles/test_controllers.dir/rule
+.PHONY : CMakeFiles/test_impedance_controller.dir/rule
 
 # Convenience name for target.
-test_controllers: CMakeFiles/test_controllers.dir/rule
-.PHONY : test_controllers
+test_impedance_controller: CMakeFiles/test_impedance_controller.dir/rule
+.PHONY : test_impedance_controller
 
 # codegen rule for target.
-CMakeFiles/test_controllers.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=13,14 "Finished codegen for target test_controllers"
-.PHONY : CMakeFiles/test_controllers.dir/codegen
+CMakeFiles/test_impedance_controller.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=19,20 "Finished codegen for target test_impedance_controller"
+.PHONY : CMakeFiles/test_impedance_controller.dir/codegen
 
 # clean rule for target.
-CMakeFiles/test_controllers.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_controllers.dir/build.make CMakeFiles/test_controllers.dir/clean
-.PHONY : CMakeFiles/test_controllers.dir/clean
+CMakeFiles/test_impedance_controller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_impedance_controller.dir/build.make CMakeFiles/test_impedance_controller.dir/clean
+.PHONY : CMakeFiles/test_impedance_controller.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_force_position_ctrl.dir
+
+# All Build rule for target.
+CMakeFiles/test_force_position_ctrl.dir/all: CMakeFiles/dm_gripper_core.dir/all
+CMakeFiles/test_force_position_ctrl.dir/all: gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_force_position_ctrl.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=13,14 "Built target test_force_position_ctrl"
+.PHONY : CMakeFiles/test_force_position_ctrl.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_force_position_ctrl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_force_position_ctrl.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles 0
+.PHONY : CMakeFiles/test_force_position_ctrl.dir/rule
+
+# Convenience name for target.
+test_force_position_ctrl: CMakeFiles/test_force_position_ctrl.dir/rule
+.PHONY : test_force_position_ctrl
+
+# codegen rule for target.
+CMakeFiles/test_force_position_ctrl.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/CMakeFiles --progress-num=13,14 "Finished codegen for target test_force_position_ctrl"
+.PHONY : CMakeFiles/test_force_position_ctrl.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_force_position_ctrl.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_force_position_ctrl.dir/build.make CMakeFiles/test_force_position_ctrl.dir/clean
+.PHONY : CMakeFiles/test_force_position_ctrl.dir/clean
 
 #=============================================================================
 # Target rules for target gtest/CMakeFiles/gtest.dir

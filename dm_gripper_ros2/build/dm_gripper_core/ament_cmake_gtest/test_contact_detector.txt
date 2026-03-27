@@ -1,0 +1,33 @@
+-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_contact_detector --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml
+
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from ContactDetector
+[ RUN      ] ContactDetector.InitialNoContact
+[       OK ] ContactDetector.InitialNoContact (0 ms)
+[ RUN      ] ContactDetector.TauTrigger
+[       OK ] ContactDetector.TauTrigger (0 ms)
+[ RUN      ] ContactDetector.NoTriggerBelowThreshold
+[       OK ] ContactDetector.NoTriggerBelowThreshold (0 ms)
+[ RUN      ] ContactDetector.PosTriggerWhenStuck
+[       OK ] ContactDetector.PosTriggerWhenStuck (0 ms)
+[ RUN      ] ContactDetector.NoPosIfConverging
+[       OK ] ContactDetector.NoPosIfConverging (0 ms)
+[ RUN      ] ContactDetector.BothTrigger
+[       OK ] ContactDetector.BothTrigger (0 ms)
+[ RUN      ] ContactDetector.ResetClearsState
+[       OK ] ContactDetector.ResetClearsState (0 ms)
+[ RUN      ] ContactDetector.SmallQErrorNoPosTrigger
+[       OK ] ContactDetector.SmallQErrorNoPosTrigger (0 ms)
+[----------] 8 tests from ContactDetector (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 8 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml'

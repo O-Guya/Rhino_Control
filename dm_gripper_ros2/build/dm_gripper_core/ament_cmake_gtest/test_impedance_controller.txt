@@ -1,0 +1,29 @@
+-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_impedance_controller --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml
+
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from ImpedanceController
+[ RUN      ] ImpedanceController.ZeroErrorZeroOutput
+[       OK ] ImpedanceController.ZeroErrorZeroOutput (0 ms)
+[ RUN      ] ImpedanceController.KpKdCorrect
+[       OK ] ImpedanceController.KpKdCorrect (0 ms)
+[ RUN      ] ImpedanceController.NoClampWhenSmallError
+[       OK ] ImpedanceController.NoClampWhenSmallError (0 ms)
+[ RUN      ] ImpedanceController.TauMaxRespected
+[       OK ] ImpedanceController.TauMaxRespected (0 ms)
+[ RUN      ] ImpedanceController.CustomTauMax
+[       OK ] ImpedanceController.CustomTauMax (0 ms)
+[ RUN      ] ImpedanceController.TauFFIsZero
+[       OK ] ImpedanceController.TauFFIsZero (0 ms)
+[----------] 6 tests from ImpedanceController (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml'

@@ -5924,3 +5924,72 @@ events:
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "/usr/lib/X11"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/cmake/ament_cmake_export_libraries-extras.cmake:40 (find_library)"
+      - "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/share/dm_motor_driver/cmake/dm_motor_driverConfig.cmake:41 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "_lib"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dm_motor_driver"
+    candidate_directories:
+      - "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/"
+    found: "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/libdm_motor_driver.so"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver"
+        - "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rubygems/bin"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rubygems/bin"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/rubygems/bin"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin"
+        - "/home/franka/.pixi/bin"
+        - "/home/franka/.pixi/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/franka/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default"
+        - "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_gripper_core"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/franka/Documents/Rhino_Control/.pixi/envs/default"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...

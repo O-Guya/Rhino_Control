@@ -1,0 +1,35 @@
+-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_gripper_state_machine --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml
+
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from GripperStateMachine
+[ RUN      ] GripperStateMachine.InitialIdle
+[       OK ] GripperStateMachine.InitialIdle (0 ms)
+[ RUN      ] GripperStateMachine.StartGraspEntersApproaching
+[       OK ] GripperStateMachine.StartGraspEntersApproaching (0 ms)
+[ RUN      ] GripperStateMachine.ReleaseReturnsIdle
+[       OK ] GripperStateMachine.ReleaseReturnsIdle (0 ms)
+[ RUN      ] GripperStateMachine.ApproachingTimeout
+[       OK ] GripperStateMachine.ApproachingTimeout (0 ms)
+[ RUN      ] GripperStateMachine.TauContactTriggersContacting
+[       OK ] GripperStateMachine.TauContactTriggersContacting (0 ms)
+[ RUN      ] GripperStateMachine.GraspingAfterContact
+[       OK ] GripperStateMachine.GraspingAfterContact (0 ms)
+[ RUN      ] GripperStateMachine.OverTorqueProtection
+[       OK ] GripperStateMachine.OverTorqueProtection (0 ms)
+[ RUN      ] GripperStateMachine.IdleCmdKpZero
+[       OK ] GripperStateMachine.IdleCmdKpZero (0 ms)
+[ RUN      ] GripperStateMachine.ApproachingCmdKp30
+[       OK ] GripperStateMachine.ApproachingCmdKp30 (0 ms)
+[----------] 9 tests from GripperStateMachine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 9 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml'

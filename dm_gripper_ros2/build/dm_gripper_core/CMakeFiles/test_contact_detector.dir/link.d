@@ -5,7 +5,7 @@ test_contact_detector: \
   CMakeFiles/test_contact_detector.dir/test/test_contact_detector.cpp.o \
   gtest/libgtest_main.a \
   gtest/libgtest.a \
-  libdm_gripper_core.so \
+  libdm_gripper_core.a \
   /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/libdm_motor_driver.so \
   /home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/libpthread.so \
   /home/franka/Documents/Rhino_Control/.pixi/envs/default/lib/libstdc++.so \
@@ -49,7 +49,7 @@ gtest/libgtest_main.a:
 
 gtest/libgtest.a:
 
-libdm_gripper_core.so:
+libdm_gripper_core.a:
 
 /home/franka/Documents/Rhino_Control/dm_gripper_ros2/install/dm_motor_driver/lib/libdm_motor_driver.so:
 

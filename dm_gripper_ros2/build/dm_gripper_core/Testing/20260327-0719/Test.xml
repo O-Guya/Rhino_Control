@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260327-0719-Experimental"
+	Name="franka-ubuntu"
+	Generator="ctest-4.3.0"
+	CompilerName="/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++"
+	CompilerVersion="15.2.0"
+	OSName="Linux"
+	Hostname="franka-ubuntu"
+	OSRelease="6.8.1-1039-realtime"
+	OSVersion="#40-Ubuntu SMP PREEMPT_RT Mon Nov 24 21:35:45 UTC 2025"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="183"
+	ModelName="Intel(R) Core(TM) i9-14900K"
+	ProcessorCacheSize="36864"
+	NumberOfLogicalCPU="24"
+	NumberOfPhysicalCPU="24"
+	TotalVirtualMemory="8191"
+	TotalPhysicalMemory="128526"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="5500.000000"
+	>
+	<Testing>
+		<StartDateTime>Mar 27 15:19 CST</StartDateTime>
+		<StartTestTime>1774595950</StartTestTime>
+		<TestList>
+			<Test>./test_gripper_kinematics</Test>
+			<Test>./test_contact_detector</Test>
+			<Test>./test_gripper_state_machine</Test>
+			<Test>./test_impedance_controller</Test>
+			<Test>./test_force_position_ctrl</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_gripper_kinematics</Name>
+			<Path>.</Path>
+			<FullName>./test_gripper_kinematics</FullName>
+			<FullCommandLine>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_kinematics.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_gripper_kinematics.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_gripper_kinematics" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_kinematics.gtest.xml"</FullCommandLine>
+			<StartTestTime>1774595950.279902</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.055050</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_kinematics.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_gripper_kinematics.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_gripper_kinematics" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_kinematics.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_gripper_kinematics --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_kinematics.gtest.xml
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from GripperKinematics
+[ RUN      ] GripperKinematics.WidthRangeValid
+[       OK ] GripperKinematics.WidthRangeValid (0 ms)
+[ RUN      ] GripperKinematics.RoundTrip
+[       OK ] GripperKinematics.RoundTrip (0 ms)
+[ RUN      ] GripperKinematics.ZeroIsZero
+[       OK ] GripperKinematics.ZeroIsZero (0 ms)
+[ RUN      ] GripperKinematics.BoundaryNoCrash
+[       OK ] GripperKinematics.BoundaryNoCrash (0 ms)
+[ RUN      ] GripperKinematics.TorqueToForce
+[       OK ] GripperKinematics.TorqueToForce (0 ms)
+[ RUN      ] GripperKinematics.InvalidParamThrows
+[       OK ] GripperKinematics.InvalidParamThrows (0 ms)
+[----------] 6 tests from GripperKinematics (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_kinematics.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_kinematics.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_contact_detector</Name>
+			<Path>.</Path>
+			<FullName>./test_contact_detector</FullName>
+			<FullCommandLine>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_contact_detector.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_contact_detector" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml"</FullCommandLine>
+			<StartTestTime>1774595950.335161</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.049050</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_contact_detector.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_contact_detector" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_contact_detector --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from ContactDetector
+[ RUN      ] ContactDetector.InitialNoContact
+[       OK ] ContactDetector.InitialNoContact (0 ms)
+[ RUN      ] ContactDetector.TauTrigger
+[       OK ] ContactDetector.TauTrigger (0 ms)
+[ RUN      ] ContactDetector.NoTriggerBelowThreshold
+[       OK ] ContactDetector.NoTriggerBelowThreshold (0 ms)
+[ RUN      ] ContactDetector.PosTriggerWhenStuck
+[       OK ] ContactDetector.PosTriggerWhenStuck (0 ms)
+[ RUN      ] ContactDetector.NoPosIfConverging
+[       OK ] ContactDetector.NoPosIfConverging (0 ms)
+[ RUN      ] ContactDetector.BothTrigger
+[       OK ] ContactDetector.BothTrigger (0 ms)
+[ RUN      ] ContactDetector.ResetClearsState
+[       OK ] ContactDetector.ResetClearsState (0 ms)
+[ RUN      ] ContactDetector.SmallQErrorNoPosTrigger
+[       OK ] ContactDetector.SmallQErrorNoPosTrigger (0 ms)
+[----------] 8 tests from ContactDetector (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 8 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_contact_detector.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_gripper_state_machine</Name>
+			<Path>.</Path>
+			<FullName>./test_gripper_state_machine</FullName>
+			<FullCommandLine>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_gripper_state_machine.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_gripper_state_machine" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml"</FullCommandLine>
+			<StartTestTime>1774595950.384381</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.049325</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_gripper_state_machine.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_gripper_state_machine" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_gripper_state_machine --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from GripperStateMachine
+[ RUN      ] GripperStateMachine.InitialIdle
+[       OK ] GripperStateMachine.InitialIdle (0 ms)
+[ RUN      ] GripperStateMachine.StartGraspEntersApproaching
+[       OK ] GripperStateMachine.StartGraspEntersApproaching (0 ms)
+[ RUN      ] GripperStateMachine.ReleaseReturnsIdle
+[       OK ] GripperStateMachine.ReleaseReturnsIdle (0 ms)
+[ RUN      ] GripperStateMachine.ApproachingTimeout
+[       OK ] GripperStateMachine.ApproachingTimeout (0 ms)
+[ RUN      ] GripperStateMachine.TauContactTriggersContacting
+[       OK ] GripperStateMachine.TauContactTriggersContacting (0 ms)
+[ RUN      ] GripperStateMachine.GraspingAfterContact
+[       OK ] GripperStateMachine.GraspingAfterContact (0 ms)
+[ RUN      ] GripperStateMachine.OverTorqueProtection
+[       OK ] GripperStateMachine.OverTorqueProtection (0 ms)
+[ RUN      ] GripperStateMachine.IdleCmdKpZero
+[       OK ] GripperStateMachine.IdleCmdKpZero (0 ms)
+[ RUN      ] GripperStateMachine.ApproachingCmdKp30
+[       OK ] GripperStateMachine.ApproachingCmdKp30 (0 ms)
+[----------] 9 tests from GripperStateMachine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 9 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_gripper_state_machine.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_impedance_controller</Name>
+			<Path>.</Path>
+			<FullName>./test_impedance_controller</FullName>
+			<FullCommandLine>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_impedance_controller.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_impedance_controller" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml"</FullCommandLine>
+			<StartTestTime>1774595950.433872</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.048751</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_impedance_controller.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_impedance_controller" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_impedance_controller --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from ImpedanceController
+[ RUN      ] ImpedanceController.ZeroErrorZeroOutput
+[       OK ] ImpedanceController.ZeroErrorZeroOutput (0 ms)
+[ RUN      ] ImpedanceController.KpKdCorrect
+[       OK ] ImpedanceController.KpKdCorrect (0 ms)
+[ RUN      ] ImpedanceController.NoClampWhenSmallError
+[       OK ] ImpedanceController.NoClampWhenSmallError (0 ms)
+[ RUN      ] ImpedanceController.TauMaxRespected
+[       OK ] ImpedanceController.TauMaxRespected (0 ms)
+[ RUN      ] ImpedanceController.CustomTauMax
+[       OK ] ImpedanceController.CustomTauMax (0 ms)
+[ RUN      ] ImpedanceController.TauFFIsZero
+[       OK ] ImpedanceController.TauFFIsZero (0 ms)
+[----------] 6 tests from ImpedanceController (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_impedance_controller.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>test_force_position_ctrl</Name>
+			<Path>.</Path>
+			<FullName>./test_force_position_ctrl</FullName>
+			<FullCommandLine>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_force_position_ctrl.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_force_position_ctrl.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_force_position_ctrl" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_force_position_ctrl.gtest.xml"</FullCommandLine>
+			<StartTestTime>1774595950.482782</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.049601</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/franka/Documents/Rhino_Control/.pixi/envs/default/bin/python3 "-u" "/home/franka/Documents/Rhino_Control/.pixi/envs/default/share/ament_cmake_test/cmake/run_test.py" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_force_position_ctrl.gtest.xml" "--package-name" "dm_gripper_core" "--output-file" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/ament_cmake_gtest/test_force_position_ctrl.txt" "--command" "/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_force_position_ctrl" "--gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_force_position_ctrl.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core':
+ - /home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_force_position_ctrl --gtest_output=xml:/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_force_position_ctrl.gtest.xml
+Running main() from /home/franka/Documents/Rhino_Control/.pixi/envs/default/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from ForcePositionController
+[ RUN      ] ForcePositionController.IdleHoldsCurrentPos
+[       OK ] ForcePositionController.IdleHoldsCurrentPos (0 ms)
+[ RUN      ] ForcePositionController.ApproachingTargetsGoal
+[       OK ] ForcePositionController.ApproachingTargetsGoal (0 ms)
+[ RUN      ] ForcePositionController.ContactingLowStiffness
+[       OK ] ForcePositionController.ContactingLowStiffness (0 ms)
+[ RUN      ] ForcePositionController.GraspingPureTorque
+[       OK ] ForcePositionController.GraspingPureTorque (0 ms)
+[ RUN      ] ForcePositionController.GraspingTauClamped
+[       OK ] ForcePositionController.GraspingTauClamped (0 ms)
+[ RUN      ] ForcePositionController.GraspingNegativeTauClampedZero
+[       OK ] ForcePositionController.GraspingNegativeTauClampedZero (0 ms)
+[----------] 6 tests from ForcePositionController (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_force_position_ctrl.gtest.xml'
+-- run_test.py: verify result file '/home/franka/Documents/Rhino_Control/dm_gripper_ros2/build/dm_gripper_core/test_results/dm_gripper_core/test_force_position_ctrl.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Mar 27 15:19 CST</EndDateTime>
+		<EndTestTime>1774595950</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
