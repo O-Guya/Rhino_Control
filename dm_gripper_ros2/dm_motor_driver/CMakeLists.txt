@@ -32,6 +32,18 @@ install(TARGETS ${PROJECT_NAME}
   RUNTIME DESTINATION bin
 )
 
+# ──────────────────────────────────────────────────────────────
+# 实验工具（Task 1 Phase 1）
+# ──────────────────────────────────────────────────────────────
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/tools/tau_logger.cpp")
+  add_executable(tau_logger tools/tau_logger.cpp)
+  target_include_directories(tau_logger PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+  )
+  target_link_libraries(tau_logger ${PROJECT_NAME} pthread)
+  install(TARGETS tau_logger DESTINATION lib/${PROJECT_NAME})
+endif()
+
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
   ament_add_gtest(test_protocol test/test_protocol.cpp)
